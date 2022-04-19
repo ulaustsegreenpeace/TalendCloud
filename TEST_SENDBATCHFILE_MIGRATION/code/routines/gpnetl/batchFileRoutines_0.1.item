@@ -1,0 +1,74 @@
+package routines;
+
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.Timestamp;
+import java.util.Date;
+
+public class batchFileRoutines {
+
+
+    public static void writeToLog(String logFileName, String message) throws IOException {
+    	
+    	FileWriter fw = new FileWriter(logFileName, true);
+        BufferedWriter bw = new BufferedWriter(fw);
+        bw.write(message);
+        bw.newLine();
+        bw.close();
+
+    }
+    
+    public static String getTimeStamp() {
+    	Date d = new Date();
+    	Timestamp ts = new Timestamp(d.getTime());
+    	return ts.toString();
+    }
+    
+    public static String extractColumnValue(String columName, String A, String B, String C, String D, String E, String F, String G, String H, String I) throws Exception {
+    	//System.out.println("Field position to look for is: " + columName + "_POSITION");
+    	//System.out.println("Field position is: " + System.getProperty(columName + "_POSITION"));
+    	//System.out.println("Values: " + A + ", " + B + ", " + C + ", " + D + ", " +  E + ", "+  F + ", "+  G + ", "+ H + ", " + I);
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("0")){
+    		return A;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("1")){
+    		return B;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("2")){
+    		return C;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("3")){
+    		return D;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("4")){
+    		return E;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("5")){
+    		return F;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("6")){
+    		return G;
+    	} 
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("7")){
+    		return H;
+    	}
+    	if(System.getProperty(columName + "_POSITION") != null && System.getProperty(columName + "_POSITION").equals("8")){
+    		return I;
+    	} 
+    	//UTM is not mandatory
+    	if(columName.equals("UTM")) {
+    		return "";
+    	}
+    	throw new Exception("Cannot find that field");
+    }
+    public static String deriveBoolean(String bool) throws Exception {
+    	if(bool.toUpperCase().equals("TRUE") | bool.equals("1")){
+    		return "1";
+    	} 
+      	if(bool.toUpperCase().equals("FALSE") | bool.equals("0")){
+    		return "0";
+    	} 
+    	return "Invalid boolean representation";
+    }  
+}
