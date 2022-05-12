@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PRODUCTION" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="TEST_SANDBOX">
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:vLfqBsgcyrDA5h0Rdrudy0lNG3uD268zvpBGVDe080I10yTuewo1uyXslsE="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Test/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Test/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftp.edigard.no"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:E1kw1QKSdJdlPzIAfYTxQ3J30wMKYQEzB59UQhLsvnKgcIK/v6pAq+iAOV8nkomE"/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="greenpeace" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="greenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/Test/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Test/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--test.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:In4FWVudkHHTNNtEANvE3+rz3Ryal068EfNlujqn7K3QjEROZbLe43X8J7w="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:881JrVkFIX1XWnC9GeQiwUdPplb0CX/dZOwA1Dx/ndft766dRWXApegck6wCSvHcvetpNZs="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.test"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV_SANDBOX">
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:dlKSnQXfCc2P6he3cKPT1JorPlfpozsxY4D9Pl721XwrRFzv693npTt/Oyo="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Dev/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Dev/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftp.edigard.no"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:Kdsd5H+VStvoX5oP9wNPKQF+I5fm1y8J4//k/5Wli+Y44v2Ve9VcqYbVnMRKr/RM"/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="greenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/Dev/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Dev/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--dev.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:ef6sa9hpFlcysBSL2kUs23K1tPIuy5Bh1fPf9+4BKILdKqGuI2CX4NeoPuA="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:WTfhuSCDBygoL+1aKLIk7Q5K221PUf7+TcpXME71Kwx3biMUWdA0fNCQ+Qpxwq9JvTPFRg=="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.dev"/>
+  </context>
+  <context confirmationNeeded="false" name="PRODUCTION">
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:yfGxQDOenvhl+p1Koo1VWkBpzsZog1VSJYE474jiqzQPu+W5XO/R6m6vcZQ="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Production/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Production/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="ediftp.hatteland.com"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:mlDhZs5IlkcGFxmLbjotNhu6PTB3JwzTEKdgTbN72yZsdlhKdejjydytmVs="/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftpgreenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/Production/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Production/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:nGbq1KanvbBWAuC16/eEllfBxlsnS7ID2SPX22kPDFsIuylwUY6XbWYBo4o="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:dE+6V3iTHT1S7JKc9vV03GG76AoBcEToLo48cvbV1WupHHuH16bd6PoGiHbiBR+1Fby60A=="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="KIT_KLINE_DEVELOPMENT">
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:L1RgOsz5QaodwNCwoYMqYbElVkVq7at0O53DMz1t0C0JVA6FwEfci42Z2co="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" name="ddInputDirectory" prompt="/Users/kitkline/Downloads/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="C:\Users\kit\Downloads\GPN_PAYMENT_PROCESSING\Direct_Debit\Incoming\local_dev\"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="C:\Users\kit\Downloads\GPN_PAYMENT_PROCESSING\Direct_Debit\Outgoing\local_dev\"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftp.edigard.no"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:gaccaU6yYyQ1WquBGLn+E3JcZZEKoP7jm5wINQiVKrvs+ctoj6/+B2+oau6P3kTp"/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="greenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/Users/kitkline/Downloads/GPN_PAYMENT_PROCESSING/OCR/Incoming/local_dev/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/Users/kitkline/Downloads/GPN_PAYMENT_PROCESSING/OCR/Outgoing/local_dev/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--dev.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:F7bBTXj63rZAXAup2ON5CjB+k5d9AvQa0bX8DKioyOLydRyP2Fs3UmhMJlM="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:LxaT05wiPfmq7l44GTKzg0BfPQZnr8rl9SCHKrgSmJv5xYMWVSNsWZRdO/09HvNZTMcYsg=="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.dev"/>
+  </context>
+  <context confirmationNeeded="false" name="ULAUSTSE_UAT02">
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:9C96MHLPnXc91LwCPqgKci27hs5lgnW1qNrocMkSrBZ/gSenzOXEByt5Sl0="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Production/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Production/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="ediftp.hatteland.com"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:si/StgvnQifF1qoMceNrtCyRaPQ2ZZVWHXa7lvFBhKXS4x+ZCEUuEPTYXWc="/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftpgreenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/Production/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Production/"/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.thor"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:dfGMiFgzxgKPy7RS4/PCuJiageKgNjQin3Ezv7r3+DFXBzexAJFibSR928U="/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--thor.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:cxMwtaeDicEgOnZsVT+/ja7muOKwdp5C0Sl+yLFr35d03r/HQgbhr0Rzol2MzXLTFc9jiB0="/>
+  </context>
+  <context confirmationNeeded="false" name="THOR_SANDBOX">
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Production/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Production/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="ediftp.hatteland.com"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:mPO4JHZ5ZcQ2KCTVPI9CA/chyzs6xoW/pF/GyxF417XxgLINrEAtSEYiffk="/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftpgreenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/Production/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Production/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--thor.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:rtRXAKUT2OqmpLBSJM6nGNl1rMBYcShWdo40+MrafoxMA8vmEmBeS04eAa4="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:TbyjYAQwwghDlk7UBtA/w2l90JE/dq2p0y25BLZnyVKM/s2f85E43T7XiEftQC9RJwnjGFU="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.thor"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:ncZBj44UqTo7fMLm0YukYPZGiJRB/URh3H3UbcGkreZjh7j5zgYa78U9JBs="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="ULAUSTSE_THOR">
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Production/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Production/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="ediftp.hatteland.com"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:/CEIR7zqYDHosYBQKkQoUEuS/+zHYX7Xb/8iXHOkNCMFdZ8aYmepXMg+6fc="/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftpgreenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/Production/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Production/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--thor.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:cwa6COU4jwfoiZgl1/BM/jn9OcveIPQpqvUC1SgS7XeiLjWDllcx4BqDMnU="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:jAd7u99o2MXn0VIPC+ENHTm+RmoHlGQZWZ6niOgIQF67N6IFukNS0cxim+6+OE1Hh2Z2SOE="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.thor"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:ppKF+6/Dt2FbF9hFYS9PVpHA1Gbk1w1ZtowMDlGELwCAs4Lu3+JatwCLfeg="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="DEV15_SANDBOX">
+    <contextParameter comment="" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/UAT02/"/>
+    <contextParameter comment="" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/UAT02/"/>
+    <contextParameter comment="" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftp.edigard.no"/>
+    <contextParameter comment="" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:WxkoKcM8mXWOMHHqki/rIPupo7zd2eYIHwY3kP6S9EhTt34ReIkhbVJrrK05En+t"/>
+    <contextParameter comment="" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="greenpeace"/>
+    <contextParameter comment="" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Incoming/UAT02/"/>
+    <contextParameter comment="" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/opt/GPN_PAYMENT_PROCESSING/OCR/Outgoing/UAT02/"/>
+    <contextParameter comment="" name="salesforceAPIHost" prompt="salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--dev15.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" name="salesforceAPIPassword" prompt="salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:J6Fqo3d65Z9OEF74ug6eZUnZdgMfHJ7PinNpgA+bLz34for7h+rxnLwBhM4="/>
+    <contextParameter comment="" name="salesforceAPIToken" prompt="salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:39ljK7o2JZbadHJKtvTXKYMpuu24IVViw6prr6n+AHklBAR04BrM0ZZY7pgGM8Vlb/9LelA="/>
+    <contextParameter comment="" name="salesforceAPIUsername" prompt="salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.dev15"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:+nyuxriR/+D2/20AF7WAlTHjnSq752firjl2Me5SJE3T0QoK+9l4PRhYK/c="/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="288"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:f5p2c9QxBk7sz00YlyO7lrJ4OzLLebgXd8A9ykI8"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;/Users/kitkline/TOSDI-7.3.1-Workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:80sKQUE2SOo+zxGHiyc7I3yn4wt0vz/AMEzj3b/L"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_E7w0wJblEeqCl7q830b6TA" name="DataOperation"/>
+    <routinesParameter id="_E_lk0JblEeqCl7q830b6TA" name="Mathematical"/>
+    <routinesParameter id="_E4WUYJblEeqCl7q830b6TA" name="Numeric"/>
+    <routinesParameter id="_E9q5QJblEeqCl7q830b6TA" name="Relational"/>
+    <routinesParameter id="_FAiAAJblEeqCl7q830b6TA" name="SQLike"/>
+    <routinesParameter id="_E-pwsJblEeqCl7q830b6TA" name="StringHandling"/>
+    <routinesParameter id="_E2ZMkJblEeqCl7q830b6TA" name="TalendDataGenerator"/>
+    <routinesParameter id="_E8wTQJblEeqCl7q830b6TA" name="TalendDate"/>
+    <routinesParameter id="_E6mXIJblEeqCl7q830b6TA" name="TalendStringUtil"/>
+    <routinesParameter id="_E5eVwJblEeqCl7q830b6TA" name="TalendString"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Initiating authorisation request for Danish Direct Debit&quot;);&#10;System.setProperty(&quot;COUNTRY_CODE&quot;, &quot;DK&quot;);&#10;System.out.println(&quot;Setting country code to: &quot; + System.getProperty(&quot;COUNTRY_CODE&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.File;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set Parameters"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DIRECT_DEBIT_AUTHORISATION_REQUEST"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="LOCAL_DEVELOPMENT"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GPN_ETL:_JeG10O6NEeqbt5ZWL8nuNQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c814fde1-5329-4b93-b088-3133d82a0441"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7BVtgTJStLd2PCfFQkSXUQJ+/ceion42nn2tp3h43F8i9KFWXbCDmmlWDhzdGi6CpCPeXkiCp1i6&#13;
+6TspGUyxpg==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_1b4cfda5-0942-451c-833b-64b0bfffa66a"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>/45dxGqmHay7UdsQQ7tKN44SKv5y+YFBxrzH4LiQM3RTlI5NiRXAUBbz9csD7ZuqXoDyFHvlgQso&#13;
+TpRRYRUaIw==</DigestValue></Reference></SignedInfo><SignatureValue>GcU6g8ugG/+vJZrLUU7vWxh/jHd39VCGYCaFqmbaV9IiNrMt2E6oHvUk2uFWDYALxEji+qhynbGF&#13;
+TkFpaqYrnBG70uJo5k9lnwQheeHjzN81Tuq5igynkoWpHongiYGEJURYJk3t57RK785rr2LKgE8a&#13;
+d0ZMdIcf/b4ax1pMuKMWJNzgwLJC2CDmJNWapahQZ1YPSZmG2Gz8qejPTY64wwigZ0wOURcgsnfv&#13;
+eiac1zPyCg46zM8ZuZdZ4iqp0Bc4aV347GjfV+7vGXy+XaucSICvCbIphomi0caEahdi8j9A2ff8&#13;
+LBkRNTACLoIclfg/wg7YbkPtCGdv0Cf0d+4qIA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_1b4cfda5-0942-451c-833b-64b0bfffa66a" Target="#_c814fde1-5329-4b93-b088-3133d82a0441"><Timestamp>2022-05-12 11:44:08</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
