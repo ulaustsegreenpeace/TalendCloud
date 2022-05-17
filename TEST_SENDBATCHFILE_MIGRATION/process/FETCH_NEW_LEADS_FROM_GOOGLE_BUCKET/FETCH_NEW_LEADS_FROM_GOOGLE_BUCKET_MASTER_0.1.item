@@ -1,205 +1,46 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PRODUCTION" jobType="Standard" xmi:version="2.0">
-  <context confirmationNeeded="false" name="TEST_SANDBOX">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:Uq8mxjSzydYWZgqod2PeG85qOpgentbbQcJz+k2XnSpAQvYgoC813PxDUYI="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/test_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/test_sandbox/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:DMjktEc/Nu/9Bi7beU9AC1lf+jak8bBxmcz3NVJ2WpmNQKhMxvIi"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-  </context>
-  <context confirmationNeeded="false" name="KIT_KLINE_DEVELOPMENT">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:VZkR56SSPmWKpCKjcAG2jH2ZFSB1tH0phc307afQz341mcj/GmPLYB8aNqk="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="C:\Users\kit\Downloads\GPN_BUCKET_LEADS\"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="C:\Users\kit\Downloads\GPN_BUCKET_LEADS\"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:V1GSotCK4fJisDg/JdxIBT11FCIHZjsnWwvp8csfnqR0CL9PZMme"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-  </context>
-  <context confirmationNeeded="false" name="DEV_SANDBOX">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:Vm+THH33QXA5qriOY5nx4koI1l+aB11vZYO7BRwl/asUjDIgrQCN88F4BnM="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/dev_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/dev_sandbox/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:ssmIhPfE89wgZndrGQsVPD0nYjjZzn6PR9TUXejecqVLkYfMrZq6"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-  </context>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="CLOUD_THOR_SANDBOX" jobType="Standard" xmi:version="2.0">
   <context confirmationNeeded="false" name="PRODUCTION">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:yrvyegNqGzt0BWBEWZmooLp3OL8S6PnxgQule63kn1vjO+Qx4895RT0BnRw="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/production/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/production/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.154.201"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:sELtUO2zIeFfd7g98vL4uBOSmHNTxdqnb3YBRuhhnwhMR1VJha8u"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_6OG4kNX6Eeyck43ORx7WMA" name="parameter_SMTP_PASSWORD" prompt="parameter_SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:MzSefBQH97a0wiQWfgFrNgm3xD7KKifFWKuEDwOsSzBYl57zvKPW/B59YU0="/>
+    <contextParameter comment="" internalId="_6OG4kdX6Eeyck43ORx7WMA" name="parameter_SMTP_PORT" prompt="parameter_SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_6OG4ktX6Eeyck43ORx7WMA" name="parameter_SMTP_SERVER" prompt="parameter_SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_6OG4k9X6Eeyck43ORx7WMA" name="parameter_SMTP_USERNAME" prompt="parameter_SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_6OIGsNX6Eeyck43ORx7WMA" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
+    <contextParameter comment="" internalId="_6OIGsdX6Eeyck43ORx7WMA" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
+    <contextParameter comment="" internalId="_6OIGstX6Eeyck43ORx7WMA" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
+    <contextParameter comment="" internalId="_6OIGs9X6Eeyck43ORx7WMA" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/tmp/leads_file_processing/production/"/>
+    <contextParameter comment="" internalId="_6OIGtNX6Eeyck43ORx7WMA" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/tmp/leads_file_processing/production/"/>
+    <contextParameter comment="" internalId="_6OJU0NX6Eeyck43ORx7WMA" name="parameter_googleBucketAccessKey" prompt="parameter_googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_6OJU0dX6Eeyck43ORx7WMA" name="parameter_googleBucketPrivateKey" prompt="parameter_googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_6OJ74NX6Eeyck43ORx7WMA" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
+    <contextParameter comment="" internalId="_6OJ74dX6Eeyck43ORx7WMA" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
+    <contextParameter comment="" internalId="_6OJ74tX6Eeyck43ORx7WMA" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.154.201"/>
+    <contextParameter comment="" internalId="_6OJ749X6Eeyck43ORx7WMA" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:cYIwJN4F/UaLRCf672fgJFA12z3MAtNSAh6bv9slCc29q25fqK8e"/>
+    <contextParameter comment="" internalId="_6OJ75NX6Eeyck43ORx7WMA" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_6OJ75dX6Eeyck43ORx7WMA" name="dbSSLAdditionalParametersLeadsStorageSystem" prompt="dbSSLAdditionalParametersLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;clientCertificateKeyStoreUrl=file:///opt/mysql_ssl_client_keystore/leads_storage_system/prod/client.jks&amp;clientCertificateKeyStorePassword=changeit&amp;trustCertificateKeyStoreUrl=file:///opt/mysql_ssl_client_keystore/leads_storage_system/prod/cacerts&amp;trustCertificateKeyStorePassword=changeit"/>
   </context>
-  <context confirmationNeeded="false" name="ULAUSTSE_LOCAL_AND_PROD">
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:WzCI5qpmLt4MPVSR0UIKfuB5WTU4zE4pGrigmCbUO43SWFndFMCJ"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:+C5jVl8Kuw+dQkdqCBYVZm7PhRDzUrO8z7Rt/1Gu+Ne+l9dDGEyAqkS67Qc="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-  </context>
-  <context confirmationNeeded="false" name="ULAUSTSE_UAT02">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:/8g3t7wpwT245MdMCvEXK3erzNQ327kVSOSGRFMxn0pATB8sWHJZT/Z2cHg="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:XyweQWv/M6AeGWN25W7lasv4XKlzAHD0b5/Rs9rL+xXuS2Yw1tSK"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-  </context>
-  <context confirmationNeeded="false" name="THOR_SANDBOX">
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:fsGmAI6D7ybnbpjJR12f+9R4240HMbQFnA3F7Jk5UoLrNchpOBu+"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:rJjG6L0vxiIcI7GYSnghWr3wjs6B6oBJGgWu1Xf4VPOIfxmnUgmtjf7I+ws="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-  </context>
-  <context confirmationNeeded="false" name="ULAUSTSE_THOR">
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:DOE4z8/qqkTZl0b9I1UFXg/2oUBIiyNK9DeTVInPf0w96eAkazXL"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:3yUn1prwY2lltjq/emprx8wvRVX9ZM8msAheZJBu4xNud8zPXhF4YG5d05o="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-  </context>
-  <context confirmationNeeded="false" name="ULAUSTSE_PRODUCTION">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:3aEBq2yIeFVjcEOdMB7PvdtzveWfFBMQ5lzekYuE4ByHZYZIGKzIsgHJ7VU="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:zZO8YXDBh9uS75ptQPdkCN1eb/kjd71q7yhqXeo8+ZvfLOT9IfPG"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-  </context>
-  <context confirmationNeeded="false" name="VALE_SANDBOX">
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:39O5dZLYK0YrG1F3VY3IepyZO8hV+EC9G7KUjk+zEjCT7HVXy4WtOJqzvWM="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:+wSLdsuao1VPE0ZBToA2lX53dKzmfBGrrzQo8isBZn+LLnvEUPww"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/vale_sandbox/"/>
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/vale_sandbox/"/>
-  </context>
-  <context confirmationNeeded="false" name="DEV15_SANDBOX">
-    <contextParameter comment="" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
-    <contextParameter comment="" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
-    <contextParameter comment="" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
-    <contextParameter comment="" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/opt/leads_file_processing/thor_sandbox/"/>
-    <contextParameter comment="" name="googleBucketAccessKey" prompt="googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
-    <contextParameter comment="" name="googleBucketPrivateKey" prompt="googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
-    <contextParameter comment="" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
-    <contextParameter comment="" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
-    <contextParameter comment="" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
-    <contextParameter comment="" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:e4JFuG8BNmNCTfmLQiRyw7MtvfoK8J+X1BFD9xLBGWizRLlpqfF9"/>
-    <contextParameter comment="" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
-    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:sSMnsxTK8RRP+ksJ3jDwgLrC2mqFPJqkmELuUVRQu/v9AKoQycg3D5xd+JU="/>
-    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
-    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
-    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+  <context confirmationNeeded="false" name="CLOUD_THOR_SANDBOX">
+    <contextParameter comment="" internalId="_6OJ75tX6Eeyck43ORx7WMA" name="parameter_SMTP_PASSWORD" prompt="parameter_SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:LhuYNlGamO639+xagVo+LlZlBoqZBs49h+vmcco6dM6QS5LLVXwDKrHxlP4="/>
+    <contextParameter comment="" internalId="_6OJ759X6Eeyck43ORx7WMA" name="parameter_SMTP_PORT" prompt="parameter_SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_6OJ76NX6Eeyck43ORx7WMA" name="parameter_SMTP_SERVER" prompt="parameter_SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_6OJ76dX6Eeyck43ORx7WMA" name="parameter_SMTP_USERNAME" prompt="parameter_SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_6OJ76tX6Eeyck43ORx7WMA" name="bucket" prompt="bucket?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="gpnordic01-campaign-leads"/>
+    <contextParameter comment="" internalId="_6OJ769X6Eeyck43ORx7WMA" name="bucketIncomingDirectory" prompt="bucketIncomingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="incoming/"/>
+    <contextParameter comment="" internalId="_6OJ77NX6Eeyck43ORx7WMA" name="bucketProcessedDirectory" prompt="bucketProcessedDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="processed/"/>
+    <contextParameter comment="" internalId="_6OJ77dX6Eeyck43ORx7WMA" name="logFileLocation" prompt="logFileLocation?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/tmp/leads_file_processing/thor_sandbox/"/>
+    <contextParameter comment="" internalId="_6OJ77tX6Eeyck43ORx7WMA" name="processingDirectory" prompt="processingDirectory?" promptNeeded="false" repositoryContextId="_WzoLoN1ZEeq-5seqaLE-pQ" type="id_String" value="/tmp/leads_file_processing/thor_sandbox/"/>
+    <contextParameter comment="" internalId="_6OJ779X6Eeyck43ORx7WMA" name="parameter_googleBucketAccessKey" prompt="parameter_googleBucketAccessKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_6OJ78NX6Eeyck43ORx7WMA" name="parameter_googleBucketPrivateKey" prompt="parameter_googleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_7Lti0KsjEeqnYqvQaVSHrQ" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_6OJ78dX6Eeyck43ORx7WMA" name="dbAccountLeadsStorageSystem" prompt="dbAccountLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="leads_storage"/>
+    <contextParameter comment="" internalId="_6OJ78tX6Eeyck43ORx7WMA" name="dbDatabaseLeadsStorageSystem" prompt="dbDatabaseLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="LEADS_STORAGE"/>
+    <contextParameter comment="" internalId="_6OJ789X6Eeyck43ORx7WMA" name="dbHostLeadsStorageSystem" prompt="dbHostLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="35.228.29.250"/>
+    <contextParameter comment="" internalId="_6OJ79NX6Eeyck43ORx7WMA" name="dbPasswordLeadsStorageSystem" prompt="dbPasswordLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_Password" value="enc:system.encryption.key.v1:a//q/Rh+JHpMwAefnr6FcjOiHi/BcmUu4WdcUmtxoJrAxP55gbcQ"/>
+    <contextParameter comment="" internalId="_6OJ79dX6Eeyck43ORx7WMA" name="dbPortLeadsStorageSystem" prompt="dbPortLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_6OJ79tX6Eeyck43ORx7WMA" name="dbSSLAdditionalParametersLeadsStorageSystem" prompt="dbSSLAdditionalParametersLeadsStorageSystem?" promptNeeded="false" repositoryContextId="_KICyoKSqEeq1f5LzAps2Ng" type="id_String" value="noDatetimeStringSync=true&amp;useSSL=true&amp;requireSSL=true&amp;clientCertificateKeyStoreUrl=file:///opt/mysql_ssl_client_keystore/leads_storage_system/dev/client.jks&amp;clientCertificateKeyStorePassword=changeit&amp;trustCertificateKeyStoreUrl=file:///opt/mysql_ssl_client_keystore/leads_storage_system/dev/cacerts&amp;trustCertificateKeyStorePassword=changeit"/>
   </context>
   <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
     <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
-    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="64"/>
     <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
     <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
@@ -239,7 +80,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:QnO5vUBYQMeEFaD+QOcvvSy33ccIvo1j419TXuDG"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:19jYfABPfP4qeh01Te6KuZIblhgNu9/7SjgJIGJP"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -254,7 +95,7 @@
     <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
     <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
     <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
-    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;/Users/kitkline/TOSDI-7.3.1-Workspace/.metadata&quot;"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend_Cloud-Studio-20211109_1610-V8.0.1/Talend-Studio-20211109_1610-V8.0.1/workspace/.metadata&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
     <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
@@ -274,7 +115,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ZKks5WTlc59lriudk6naylm//BA5AVvBqbuOFFce"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:VI09kbKt6cZyuhGywDRZnfvmVxo7yCDrYb47Nbv8"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -304,12 +145,12 @@
     <routinesParameter id="_E6mXIJblEeqCl7q830b6TA" name="TalendStringUtil"/>
     <routinesParameter id="_E5eVwJblEeqCl7q830b6TA" name="TalendString"/>
   </parameters>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
     <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DOWNLOAD_FILES"/>
-    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="KIT_KLINE_DEVELOPMENT"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="CLOUD_THOR_SANDBOX"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GPN_ETL:_X5rDIN1YEeq-5seqaLE-pQ"/>
     <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
     <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
@@ -323,11 +164,15 @@
     <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
     <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
     <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_1"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="128">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="480" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
@@ -346,11 +191,15 @@
     <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
     <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
     <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_2"/>
   </node>
-  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="128">
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_3"/>
     <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
     <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
@@ -369,15 +218,203 @@
     <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
     <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
     <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tRunJob_3"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+      <elementValue elementRef="VALUE" value="&quot;just some string&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="GenerateStringToCreateTempFolders"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.processingDirectory + &quot;tempFileToCreate_processingDirectory.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="GenereateFolderFor_context.processingDirectory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="672" posY="0">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.bucketIncomingDirectory + &quot;tempFileToCreate_bucketIncomingDirectory.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="GenerateFolderFor_context.bucketIncomingDirectory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_3"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.bucketProcessedDirectory + &quot;tempFileToCreate_bucketProcessedDirectory.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="GenerateFolderFor_context.bucketProcessedDirectory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_3">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="416" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_4"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.logFileLocation + &quot;tempFileToCreate_logFileLocation.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="GenerateFolderFor_context.logFileLocation"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_4">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
   </node>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
   </connection>
   <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_3">
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row3" lineStyle="0" metaname="tFileOutputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_2" target="tFileOutputDelimited_3">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row3"/>
+  </connection>
+  <connection connectorName="FLOW" label="row4" lineStyle="0" metaname="tFileOutputDelimited_3" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_3" target="tFileOutputDelimited_4">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row4"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_4" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_4" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
   </connection>
   <subjob>
     <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
@@ -394,13 +431,18 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_1b871e9a-ea7c-4a21-b3bb-a6ddb9c2d0c4"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>pQlFit0wpR4IheBE4O6jfnqFKxSz5H4BKosD84cF9hXHizgst2svyYvQjLJWOD4tZ9Ez6EkaaiVz&#13;
-khELjvTutQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_7c99c3b0-6d20-4ddc-919b-7a724fa72709"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LlRRsMv255nW07/BGhXpgExmfJTWyllKHlLBSZIBDo1qqY9N099DGCTZFp1tkPX+hhQTpZGm/nXp&#13;
-EC/Tq4kkOg==</DigestValue></Reference></SignedInfo><SignatureValue>EcaZV13eDA5ueSkrW/G+BRLFFsJTbuFtoG0w4BRzYDVtoxlIg2j11sWYON2sipnmWy+zZq6hkvcY&#13;
-T8vaLnCz457ERZM2xdSqcyDvh/XkJpGpE86jbsyr52EWbj5yBRSqj7vZEAKJzd8ogdnFT2yaRZKc&#13;
-Hh5Fjl7OIaU7LHdL6OQ7Ot7yaTmf7/ZacVByBcbF9ZYY7BaCI//zSp4af4hYn4SeoizvNwoUS/wD&#13;
-OgcByfDWedAQE44AvecAAN0HxCFKkf21XH6v+n++OPcMc3U8QzPGpEtt4ys8m+pnK4Mr4F+aWs8E&#13;
-Iob7UcNsJmoq63wkCUfDN75zYnspOMJAd2qwpw==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_f549cd8c-ccb3-446b-9fe8-fa5f88494150"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>wRVONSGPWNgo6FctiTJUbnwZlPr3varaizsd1S+OJXaSFVsr7vvsDVvGPvyfmlks5oJ66HPLp5Z4&#13;
+2glc4kalVA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_184e5809-3918-4928-834f-af8f41997575"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>IvfvybICf5J5aAkS2u5c7pFpe3ehAAJKiRX5pjU6llxyThdaIsd01s+yO93ewX1AeCm7pkjTF9D/&#13;
+Vn8DRnVbhw==</DigestValue></Reference></SignedInfo><SignatureValue>ZT35tomfOo5K1f74w6n9cYY/IAtSauqcSEZdh4Rmax2qKOwqNxP8vnN5J9L9P/bzjIVpLaMiqRmU&#13;
+R4bAIC8RMdmXgXLRXvMA3m9Rp3hZE3Ia+7tiyQVYnqYnquNB9m820WBMIXF/RsHt9AgJ5XRPGzJj&#13;
+RkVjihnLvHl0920j99vQUfb58pA1pZn7qJKTPIH/A+jAwaPfg1r2BNTnBo5H19Q8TkfAUYjHRhZa&#13;
+fqjK1p7iyDQnBTnheW+nMm10TVeUgUX8VEqSwbMGaB1eD6JQDWXBkZmdi9NIjzj0fP4hwRvRyTEp&#13;
+P5rK6/41qG2z/G+5bBOCyiNIIDlrqDYC+vpohA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
@@ -422,4 +464,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_7c99c3b0-6d20-4ddc-919b-7a724fa72709" Target="#_1b871e9a-ea7c-4a21-b3bb-a6ddb9c2d0c4"><Timestamp>2022-05-17 15:28:33</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_184e5809-3918-4928-834f-af8f41997575" Target="#_f549cd8c-ccb3-446b-9fe8-fa5f88494150"><Timestamp>2022-05-17 16:03:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
