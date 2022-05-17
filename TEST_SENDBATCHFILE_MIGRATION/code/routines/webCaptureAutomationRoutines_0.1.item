@@ -1,0 +1,444 @@
+package routines;
+
+import org.apache.commons.text.WordUtils;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.StringTokenizer;
+
+/*
+ * user specification: the function's comment should contain keys as follows: 1. write about the function's comment.but
+ * it must be before the "{talendTypes}" key.
+ * 
+ * 2. {talendTypes} 's value must be talend Type, it is required . its value should be one of: String, char | Character,
+ * long | Long, int | Integer, boolean | Boolean, byte | Byte, Date, double | Double, float | Float, Object, short |
+ * Short
+ * 
+ * 3. {Category} define a category for the Function. it is required. its value is user-defined .
+ * 
+ * 4. {param} 's format is: {param} <type>[(<default value or closed list values>)] <name>[ : <comment>]
+ * 
+ * <type> 's value should be one of: string, int, list, double, object, boolean, long, char, date. <name>'s value is the
+ * Function's parameter name. the {param} is optional. so if you the Function without the parameters. the {param} don't
+ * added. you can have many parameters for the Function.
+ * 
+ * 5. {example} gives a example for the Function. it is optional.
+ */
+public  class webCaptureAutomationRoutines {
+	public static String cleanEmailAddress(String email){
+		String theVal = email;
+		if(theVal == null) return "";
+		if(theVal.equals("null")) return "";
+		theVal = theVal.toLowerCase();
+		return theVal.replace(",", "-") ;
+	}
+	public static String cleanCountryCode(String code){
+		String theVal = code;
+		if(theVal == null) return "";
+		if(theVal.equals("null")) return "";
+		theVal = theVal.toUpperCase();
+		return theVal.replace(",", "-");
+	}
+	public static String generateSourceCode(String country, String downloadedSourceCode) throws Exception{
+		String theVal = downloadedSourceCode;
+		if(theVal == null || theVal.equals("null") || theVal.equals("")) return cleanCountryCode(country) + System.getProperty("sourceCodePostFix");
+		//Old P3 Code
+//		theVal = theVal.toLowerCase();
+//		if(theVal.equals("climate")) return cleanCountryCode(country)  +  "_CLM_SUBS";
+//		if(theVal.equals("food4life")) return cleanCountryCode(country)  +  "_F4L_SUBS";
+//		if(theVal.equals("forests")) return cleanCountryCode(country)  +  "_FOR_SUBS";
+//		if(theVal.equals("oceans")) return cleanCountryCode(country)  +  "_FSH_SUBS";
+//		if(theVal.equals("renewables")) return cleanCountryCode(country)  +  "_REN_SUBS";
+//		if(theVal.equals("toxin")) return cleanCountryCode(country)  +  "_TOX_SUBS";
+//		if(theVal.equals("arctic")) return cleanCountryCode(country)  +  "_ARC_SUBS";
+		return cleanCountryCode(country)  +  "_" + theVal;
+	}
+
+	public static String cleanTelephone(String phone){
+		String theVal = phone;
+		if(theVal == null) return "";
+		if(theVal.equals("null")) return "";
+		theVal = theVal.replace("O", "0");
+		theVal = theVal.replace("o", "0");
+		if(theVal.length() <= 4) return "";
+		if(theVal.indexOf("11111") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("22222") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("33333") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("44444") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("55555") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("66666") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("77777") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("88888") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("99999") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("00000") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("01234") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("12345") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("23456") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("34567") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("45678") >= 0) {
+			return "";
+		}
+		if(theVal.indexOf("56789") >= 0) {
+			return "";
+		}
+		char[] chars = theVal.toCharArray();
+		theVal = "";
+		for(char c : chars){
+			if(c == '0') theVal += c;
+			if(c == '1') theVal += c;
+			if(c == '2') theVal += c;
+			if(c == '3') theVal += c;
+			if(c == '4') theVal += c;
+			if(c == '5') theVal += c;
+			if(c == '6') theVal += c;
+			if(c == '7') theVal += c;
+			if(c == '8') theVal += c;
+			if(c == '9') theVal += c;
+		}
+		return theVal.replace(",", "-");
+	}
+	public static String cleanFirstName(String name){
+		String theVal = name;
+		if(theVal == null) return "";
+		if(theVal.equals("null")) return "";
+		theVal = theVal.toLowerCase();
+		theVal = org.apache.commons.text.WordUtils.capitalize(theVal);
+		return theVal.replace(",", "-");
+	}
+	public  static String cleanLastName(String name){
+		String theVal = name;
+		if(theVal == null) return "";
+		if(theVal.equals("null")) return "";
+		theVal = theVal.toLowerCase();
+		theVal = org.apache.commons.text.WordUtils.capitalize(theVal,new char[]{'-'});
+		theVal = org.apache.commons.text.WordUtils.capitalize(theVal);
+		theVal = theVal.replace(".","-");
+		if(theVal.startsWith("Von")){
+			theVal = "von" + theVal.substring(3);
+		}
+		if(theVal.startsWith("Af ")){
+			theVal = "af " + theVal.substring(2);
+		}
+		if(theVal.startsWith("De ")){
+			theVal = "de " + theVal.substring(2);
+		}	
+		if(theVal.startsWith("Van ")){
+			theVal = "van " + theVal.substring(3);
+		}
+		if(theVal.startsWith("Van Der ")){
+			theVal = "van der " + theVal.substring(7);
+		}
+		return theVal.replace(",", "-");
+	}
+	public static String cleanMeta(String meta){
+		String theVal = meta;
+		if(theVal == null) return "";
+		return theVal.replace(",", "-");
+	}
+	public static ArrayList<String> generateXmlForSilverpopUploadActivitiesApiCallInChunksOf100(String fileFullPath,String SpopTableId) throws IOException{
+		FileReader fileReader = new FileReader(new File(fileFullPath));
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		String line;
+		ArrayList<String> chunks = new ArrayList<String>();
+		int count = 0;
+		String xml = "<Envelope><Body><InsertUpdateRelationalTable><TABLE_ID>" + SpopTableId + "</TABLE_ID><ROWS>";
+		while ((line = bufferedReader.readLine()) != null) {
+			//Skip header
+			if(count >= 1){
+				if(count%100 == 0){
+					xml += "</ROWS></InsertUpdateRelationalTable> </Body></Envelope>";
+					chunks.add(xml);
+					//Start next chunk of 100
+					xml = "<Envelope><Body><InsertUpdateRelationalTable><TABLE_ID>" + SpopTableId + "</TABLE_ID><ROWS>";
+				}
+				xml += buildXMLFromSilverpopActivityDataLine(line);
+			}
+			count++;
+		}
+		//Add the last part 100 chunk
+		if(!xml.equals("<Envelope><Body><InsertUpdateRelationalTable><TABLE_ID>" + SpopTableId + "</TABLE_ID><ROWS>")){
+			xml += "</ROWS></InsertUpdateRelationalTable> </Body></Envelope>";
+			chunks.add(xml);
+		}
+		return chunks;
+	}
+	public static ArrayList<String> generateXmlForSilverpopUploadContactsApiCallInChunksOf1(String fileFullPath,String SpopTableId) throws Exception{
+		FileReader fileReader = new FileReader(new File(fileFullPath));
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		String line;
+		ArrayList<String> chunks = new ArrayList<String>();
+		int count = 0;
+
+		while ((line = bufferedReader.readLine()) != null) {
+			//Skip header
+			if(count >= 1){
+					String xml = "<Envelope><Body><AddRecipient><LIST_ID>" + SpopTableId + "</LIST_ID><CREATED_FROM>1</CREATED_FROM>";
+					xml += buildXMLFromSilverpopContactDataLine(line);
+					xml += "</AddRecipient></Body></Envelope>";
+					chunks.add(xml);
+			}
+			count++;
+		}
+		return chunks;
+	}
+	public static ArrayList<String> generateXmlForSilverpopUploadEspressoContactsApiCallInChunksOf1(String fileFullPath,String SpopTableId) throws Exception{
+		FileReader fileReader = new FileReader(new File(fileFullPath));
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		String line;
+		ArrayList<String> chunks = new ArrayList<String>();
+		int count = 0;
+
+		while ((line = bufferedReader.readLine()) != null) {
+			//Skip header
+			if(count >= 1){
+					String xml = "<Envelope><Body><AddRecipient><LIST_ID>" + SpopTableId + "</LIST_ID><CREATED_FROM>1</CREATED_FROM>";
+					xml += buildXMLFromSilverpopEspressoContactDataLine(line);
+					xml += "</AddRecipient></Body></Envelope>";
+					chunks.add(xml);
+			}
+			count++;
+		}
+		return chunks;
+	}
+	private static String buildXMLFromSilverpopActivityDataLine(String line) {
+		String[] items = line.split(",");
+		String row = "<ROW>";
+		row += "<COLUMN name=\"DATE_OF_ACTIVITY\">";
+		row += "<![CDATA[" + items[0] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"EMAIL_ADDRESS\">";
+		row += "<![CDATA[" + items[1] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"META\">";
+		row += "<![CDATA[" + items[2] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"SOURCE_CODE\">";
+		row += "<![CDATA[" + items[3] + "]]>";
+		row += "</COLUMN>";
+		row += "</ROW>";
+		return row;
+	}
+	private static String buildXMLFromSilverpopContactDataLine(String line) throws Exception {
+		String[] items = line.split(",");
+		String row = "";
+		
+		
+		try {
+			row += "<COLUMN>";
+			row += "<NAME>Email</NAME>";
+			row += "<VALUE>" + items[0] + "</VALUE>";
+			row += "</COLUMN>";
+
+			row += "<COLUMN>";
+			row += "<NAME>CAMPAIGN_OR_INITIATIVE_ENTRY_CODE</NAME>";
+			row += "<VALUE>" + items[1] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>DATE_ADDED</NAME>";
+			row += "<VALUE>" + items[2] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>FIRST_NAME</NAME>";
+			row += "<VALUE>" + items[3].replace("<", "").replace(">", "").replace("/", "") + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>ISO_COUNTRY_CODE</NAME>";
+			row += "<VALUE>" + items[4] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			
+			row += "<COLUMN>";
+			row += "<NAME>LAST_NAME</NAME>";
+			if(items.length >= 6){
+				row += "<VALUE>" + items[5].replace("<", "").replace(">", "").replace("/", "") + "</VALUE>";
+			}else{
+				row += "<VALUE></VALUE>";
+			}
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>MOBILE</NAME>";
+			if(items.length >= 7){
+				row += "<VALUE>" + items[6].replace("<", "").replace(">", "").replace("/", "") + "</VALUE>";
+			}else{
+				row += "<VALUE></VALUE>";
+			}
+			row += "</COLUMN>";
+		} catch (Exception e) {
+			System.out.println("Failed to parse this line into xml: " + line);
+			throw e;
+		}
+		return row;
+	}
+	
+	private static String buildXMLFromSilverpopEspressoContactDataLine(String line) throws Exception {
+		String[] items = line.split(",");
+		String row = "";
+		
+		
+		try {
+			row += "<COLUMN>";
+			row += "<NAME>Email</NAME>";
+			row += "<VALUE>" + items[0] + "</VALUE>";
+			row += "</COLUMN>";
+
+			row += "<COLUMN>";
+			row += "<NAME>CAMPAIGN_OR_INITIATIVE_ENTRY_CODE</NAME>";
+			row += "<VALUE>" + items[1] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>DATE_ADDED</NAME>";
+			row += "<VALUE>" + items[2] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>FIRST_NAME</NAME>";
+			row += "<VALUE>" + items[3] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>LAST_NAME</NAME>";
+			row += "<VALUE>" + items[4] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>DATE_OF_BIRTH</NAME>";
+			row += "<VALUE>" + items[5] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>GENDER</NAME>";
+			row += "<VALUE>" + items[6] + "</VALUE>";
+			row += "</COLUMN>";	
+			
+			row += "<COLUMN>";
+			row += "<NAME>MOBILE</NAME>";
+			row += "<VALUE>" + items[7] + "</VALUE>";
+			row += "</COLUMN>";
+
+			row += "<COLUMN>";
+			row += "<NAME>ISO_COUNTRY_CODE</NAME>";
+			row += "<VALUE>" + items[8] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>ISO_PRIMARY_LANGUAGE</NAME>";
+			row += "<VALUE>" + items[9] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>BUDGET_CODE</NAME>";
+			row += "<VALUE>" + items[10] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>ACQUISITION_VENTURE_CODE</NAME>";
+			row += "<VALUE>" + items[11] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>DONOR</NAME>";
+			row += "<VALUE>" + items[12] + "</VALUE>";
+			row += "</COLUMN>";
+			
+			row += "<COLUMN>";
+			row += "<NAME>NON_DONOR</NAME>";
+			row += "<VALUE>" + items[13] + "</VALUE>";
+			row += "</COLUMN>";
+
+				
+			row += "<COLUMN>";
+			row += "<NAME>REGULAR_GIVER</NAME>";
+			row += "<VALUE>" + items[14] + "</VALUE>";
+			row += "</COLUMN>";
+
+		} catch (Exception e) {
+			System.out.println("Failed to parse this line into xml: " + line);
+			throw e;
+		}
+		return row;
+	}
+	public static ArrayList<String> generateXmlForSilverpopUploadArbitraryDataApiCallInChunksOf100(String fileFullPath,String SpopTableId) throws IOException{
+		FileReader fileReader = new FileReader(new File(fileFullPath));
+		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		String line;
+		ArrayList<String> chunks = new ArrayList<String>();
+		int count = 0;
+		String xml = "<Envelope><Body><InsertUpdateRelationalTable><TABLE_ID>" + SpopTableId + "</TABLE_ID><ROWS>";
+		while ((line = bufferedReader.readLine()) != null) {
+			//Skip header
+			if(count >= 1){
+				if(count%100 == 0){
+					xml += "</ROWS></InsertUpdateRelationalTable> </Body></Envelope>";
+					chunks.add(xml);
+					//Start next chunk of 100
+					xml = "<Envelope><Body><InsertUpdateRelationalTable><TABLE_ID>" + SpopTableId + "</TABLE_ID><ROWS>";
+				}
+				xml += buildXMLFromSilverpopArbitraryDataLine(line);
+			}
+			count++;
+		}
+		//Add the last part 100 chunk
+		if(!xml.equals("<Envelope><Body><InsertUpdateRelationalTable><TABLE_ID>" + SpopTableId + "</TABLE_ID><ROWS>")){
+			xml += "</ROWS></InsertUpdateRelationalTable> </Body></Envelope>";
+			chunks.add(xml);
+		}
+		return chunks;
+	}
+	private static String buildXMLFromSilverpopArbitraryDataLine(String line) {
+		String[] items = line.split(",");
+		String row = "<ROW>";
+		row += "<COLUMN name=\"EMAIL_ADDRESS\">";
+		row += "<![CDATA[" + items[0] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"ARBITRARY_DATA_TYPE\">";
+		row += "<![CDATA[" + items[1] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"VALUE\">";
+		row += "<![CDATA[" + items[2] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"SOURCE_CODE\">";
+		row += "<![CDATA[" + items[3] + "]]>";
+		row += "</COLUMN>";
+		row += "<COLUMN name=\"DATE_VALUE_SET\">";
+		row += "<![CDATA[" + items[4] + "]]>";
+		row += "</COLUMN>";
+		row += "</ROW>";
+		return row;
+	}
+}
