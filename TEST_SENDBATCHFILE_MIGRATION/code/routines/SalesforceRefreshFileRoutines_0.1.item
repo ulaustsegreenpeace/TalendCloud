@@ -1,0 +1,182 @@
+package routines;
+
+
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.PhoneNumberUtil.PhoneNumberFormat;
+import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
+
+
+public class SalesforceRefreshFileRoutines {
+	public static String validatePhoneNumber(String number, String aregionCode){
+		if(number == null || number.trim().length() == 0){
+			return "";
+		}
+		String theregionCode = aregionCode;
+		if(theregionCode.equals("OTHER")){
+			theregionCode = "ZZ";
+		}
+		PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance(); 
+		try {
+			PhoneNumber num = phoneUtil.parse(number, theregionCode);
+			if (phoneUtil.isPossibleNumber(num)){
+				return number;
+			}else{
+				return "";
+			}
+			} catch (Exception e) {
+			  return "";
+			}
+
+	}
+	public static String validateAndCleanPhoneNumber(String number, String aregionCode){
+		if(number == null || number.trim().length() == 0){
+			return "";
+		}
+		String theregionCode = aregionCode;
+		if(theregionCode.equals("OTHER")){
+			theregionCode = "ZZ";
+		}
+		PhoneNumberUtil phoneUtil = PhoneNumberUtil.getInstance(); 
+		try {
+			PhoneNumber num = phoneUtil.parse(number, theregionCode);
+			if (phoneUtil.isPossibleNumber(num)){
+					return phoneUtil.format(num, PhoneNumberFormat.INTERNATIONAL);
+			}else{
+				return "";
+			}
+			} catch (Exception e) {
+			  return "";
+			}
+	}
+	public static String convertCountry(String aregionCode){
+		if(aregionCode == null || aregionCode.trim().length() == 0){
+			return "";
+		}else{
+			if(aregionCode.toUpperCase().equals("NO")){
+				return "Norway";
+			}
+			if(aregionCode.toUpperCase().equals("FI")){
+				return "Finland";
+			}
+			if(aregionCode.toUpperCase().equals("SE")){
+				return "Sweden";
+			}
+			if(aregionCode.toUpperCase().equals("DK")){
+				return "Denmark";
+			}
+			return "";
+		}
+	}
+	public static String convertSurname(String surname){
+		if(surname == null || surname.trim().length() == 0){
+			return "Unknown";
+		}else{
+			
+			return surname;
+		}
+	}	
+	public static String cleanEmail(String email){
+		if(email.endsWith(".f")
+           | email.endsWith(".o")
+           | email.endsWith(".s")		
+           | email.endsWith(".1dk")		
+           | email.endsWith(".n")			
+           | email.endsWith(".c")	
+           | email.endsWith(".d")	
+           | email.endsWith(".c9om")	
+           | email.endsWith(".i")	  
+           | email.endsWith(".m")	  
+           | email.endsWith(".i")	 
+           | email.endsWith(".com0")	 
+		){
+			return "";
+		}
+		return email;
+	}
+	public static int booleanStringFromTrueFalseString(String boolVal){
+		if(boolVal == null || boolVal.trim().length() == 0){
+			return 0;
+		}
+		if(boolVal.toUpperCase().equals("TRUE")){
+			return 1;
+		}
+		if(boolVal.toUpperCase().equals("FALSE")){
+			return 0;
+		}
+		return 0;
+	}
+	public static String truncateLongDate(String date) throws Exception{
+		if(date == null || date.trim().length() == 0){
+			return "";
+		}
+		if(date.trim().length() != 29){
+			System.out.println(date);
+			System.out.println(date.trim().length());
+			throw new Exception("Is date in this format: 2018-07-10 04:56:45.673000000?");
+		}
+		return date.trim().substring(0,19);
+	}
+	public static String deriveLanguage(String country, String language) throws Exception{
+		if(language != null && language.trim().toUpperCase().equals("SV")){
+			return "SE";
+		}
+		if(language != null && language.trim().toUpperCase().equals("FS")){
+			return "FI";
+		}
+		if(language != null && language.trim().toUpperCase().equals("DA")){
+			return "DK";
+		}
+		if(language != null && language.trim().length() > 0){
+			return language.toUpperCase();
+		}
+		if(country != null && country.trim().length() > 0){
+			return country.toUpperCase();
+		}
+		return "";
+	}
+	public static String deriveLocale(String language, String country) throws Exception{
+		String thelang = deriveLanguage(country,language);
+		if(thelang.equals("")){
+			thelang = "se";
+		}else{
+			thelang = thelang.toLowerCase();
+		}
+		if(thelang.equals("se")){
+			thelang = "sv";
+		}
+		//fi is the same
+		if(thelang.equals("dk")){
+			thelang = "da";
+		}
+		if(thelang.equals("no")){
+			thelang = "nn";
+		}
+		String thecountry = "";
+		if(country != null && !country.equals("")){
+			thecountry = country.toLowerCase();
+		}else{
+			thecountry = "se";
+		}
+		if(!thecountry.equals("se") & !thecountry.equals("no") & !thecountry.equals("dk") & !thecountry.equals("fi")){
+			thecountry = "se";
+		}
+		String theLocale = thelang + "-" + thecountry;
+		if(theLocale.equals("fi-fi") | theLocale.equals("sv-se") | theLocale.equals("nn-no") | theLocale.equals("da-dk") | theLocale.equals("sv-fi")){
+			return theLocale;
+		}else{
+			if(thecountry.equals("se")){
+				return "sv-se";
+			}
+			if(thecountry.equals("dk")){
+				return "da-dk";
+			}
+			if(thecountry.equals("fi")){
+				return "fi-fi";
+			}
+			if(thecountry.equals("no")){
+				return "nn-no";
+			}
+		}
+		return "";
+	}
+}
