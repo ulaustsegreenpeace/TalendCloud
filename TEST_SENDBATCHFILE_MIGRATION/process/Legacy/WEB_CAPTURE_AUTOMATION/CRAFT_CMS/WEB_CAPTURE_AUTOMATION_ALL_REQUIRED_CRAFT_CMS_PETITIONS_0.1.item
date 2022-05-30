@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Production" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" internalId="_BdJHMNghEeyYfIsgAdMElQ" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" internalId="_BdJHMdghEeyYfIsgAdMElQ" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_BdJHMtghEeyYfIsgAdMElQ" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_BdJHM9ghEeyYfIsgAdMElQ" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_PN-OoNYEEeyck43ORx7WMA" name="WAIT_PERIOD_BEFORE_STARTING_SFTP" prompt="WAIT_PERIOD_BEFORE_STARTING_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="2000000"/>
+    <contextParameter comment="" internalId="_BdJHNNghEeyYfIsgAdMElQ" name="craftCMSPassword" prompt="craftCMSPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="1917Suomi1917"/>
+    <contextParameter comment="" internalId="_BdJHNdghEeyYfIsgAdMElQ" name="craftCMSSeleniumBridgeDownloadUrl" prompt="craftCMSSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestCraftCMSActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHNtghEeyYfIsgAdMElQ" name="craftCMSUsername" prompt="craftCMSUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="support"/>
+    <contextParameter comment="" internalId="_BdJHN9ghEeyYfIsgAdMElQ" name="dbAccount" prompt="dbAccount?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND"/>
+    <contextParameter comment="" internalId="_BdJHONghEeyYfIsgAdMElQ" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND_STORAGE"/>
+    <contextParameter comment="" internalId="_BdJHOdghEeyYfIsgAdMElQ" name="dbHost" prompt="dbHost?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="35.241.158.122"/>
+    <contextParameter comment="" internalId="_BdJHOtghEeyYfIsgAdMElQ" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="6SM7mF#K)DVuqU&lt;u"/>
+    <contextParameter comment="" internalId="_BdJHO9ghEeyYfIsgAdMElQ" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_BdJHPNghEeyYfIsgAdMElQ" name="engagingNetworksPassword" prompt="engagingNetworksPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="af7eiSai10"/>
+    <contextParameter comment="" internalId="_BdJHPdghEeyYfIsgAdMElQ" name="engagingNetworksSeleniumBridgeDownloadUrl" prompt="engagingNetworksSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestEngagingNetworksCampaignDownload"/>
+    <contextParameter comment="" internalId="_BdJHPtghEeyYfIsgAdMElQ" name="engagingNetworksUsername" prompt="engagingNetworksUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline@greenpeace.org"/>
+    <contextParameter comment="" internalId="_BdJHP9ghEeyYfIsgAdMElQ" name="fundraisingWebApplicationBucketName" prompt="fundraisingWebApplicationBucketName?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="gpnordic01-bi-fundraising-platform"/>
+    <contextParameter comment="" internalId="_BdJHQNghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketAccessKey" prompt="fundraisingWebApplicationGoogleBucketAccessKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_BdJHQdghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketPrivateKey" prompt="fundraisingWebApplicationGoogleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_BdJHQtghEeyYfIsgAdMElQ" name="fundraisingWebApplicationToken" prompt="fundraisingWebApplicationToken?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="secretToken123"/>
+    <contextParameter comment="" internalId="_BdJHQ9ghEeyYfIsgAdMElQ" name="outputFileLocation" prompt="outputFileLocation?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/tmp/mas/web_capture/"/>
+    <contextParameter comment="" internalId="_BdJHRNghEeyYfIsgAdMElQ" name="p3Password" prompt="p3Password?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="ABCChnge3MNe789Pleas123"/>
+    <contextParameter comment="" internalId="_BdJHRdghEeyYfIsgAdMElQ" name="p3SeleniumBridgeDownloadUrl" prompt="p3SeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestP3ActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHRtghEeyYfIsgAdMElQ" name="p3Username" prompt="p3Username?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline"/>
+    <contextParameter comment="" internalId="_BdJHR9ghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystore" prompt="seleniumBridgeHTTPSKeystore?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/opt/web_capture_keystore/selenium-bridge-keystore.jks"/>
+    <contextParameter comment="" internalId="_BdJHSNghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystorePassword" prompt="seleniumBridgeHTTPSKeystorePassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="password"/>
+  </context>
+  <context confirmationNeeded="false" name="Kit_Development">
+    <contextParameter comment="" internalId="_BdJHSdghEeyYfIsgAdMElQ" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" internalId="_BdJHStghEeyYfIsgAdMElQ" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_BdJHS9ghEeyYfIsgAdMElQ" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_BdJHTNghEeyYfIsgAdMElQ" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_PN-OodYEEeyck43ORx7WMA" name="WAIT_PERIOD_BEFORE_STARTING_SFTP" prompt="WAIT_PERIOD_BEFORE_STARTING_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="2000000"/>
+    <contextParameter comment="" internalId="_BdJHTdghEeyYfIsgAdMElQ" name="craftCMSPassword" prompt="craftCMSPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="1917Suomi1917"/>
+    <contextParameter comment="" internalId="_BdJHTtghEeyYfIsgAdMElQ" name="craftCMSSeleniumBridgeDownloadUrl" prompt="craftCMSSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestCraftCMSActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHT9ghEeyYfIsgAdMElQ" name="craftCMSUsername" prompt="craftCMSUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="support"/>
+    <contextParameter comment="" internalId="_BdJHUNghEeyYfIsgAdMElQ" name="dbAccount" prompt="dbAccount?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="root"/>
+    <contextParameter comment="" internalId="_BdJHUdghEeyYfIsgAdMElQ" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="GPNORWAREHOUSE"/>
+    <contextParameter comment="" internalId="_BdJHUtghEeyYfIsgAdMElQ" name="dbHost" prompt="dbHost?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="espdbreporting02.nordic.gl3"/>
+    <contextParameter comment="" internalId="_BdJHU9ghEeyYfIsgAdMElQ" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="iephoo1KeeSho"/>
+    <contextParameter comment="" internalId="_BdJHVNghEeyYfIsgAdMElQ" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_BdJHVdghEeyYfIsgAdMElQ" name="engagingNetworksPassword" prompt="engagingNetworksPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="af7eiSai10"/>
+    <contextParameter comment="" internalId="_BdJHVtghEeyYfIsgAdMElQ" name="engagingNetworksSeleniumBridgeDownloadUrl" prompt="engagingNetworksSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestEngagingNetworksCampaignDownload"/>
+    <contextParameter comment="" internalId="_BdJHV9ghEeyYfIsgAdMElQ" name="engagingNetworksUsername" prompt="engagingNetworksUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline@greenpeace.org"/>
+    <contextParameter comment="" internalId="_BdJHWNghEeyYfIsgAdMElQ" name="fundraisingWebApplicationBucketName" prompt="fundraisingWebApplicationBucketName?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="gpnordic01-bi-fundraising-platform"/>
+    <contextParameter comment="" internalId="_BdJHWdghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketAccessKey" prompt="fundraisingWebApplicationGoogleBucketAccessKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_BdJHWtghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketPrivateKey" prompt="fundraisingWebApplicationGoogleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_BdJHW9ghEeyYfIsgAdMElQ" name="fundraisingWebApplicationToken" prompt="fundraisingWebApplicationToken?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="secretToken123"/>
+    <contextParameter comment="" internalId="_BdJHXNghEeyYfIsgAdMElQ" name="outputFileLocation" prompt="/opt/mas/web_capture/" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/Users/kit/Downloads/Nordic/Output_Files/"/>
+    <contextParameter comment="" internalId="_BdJHXdghEeyYfIsgAdMElQ" name="p3Password" prompt="p3Password?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="ABCChnge3MNe789Pleas123"/>
+    <contextParameter comment="" internalId="_BdJHXtghEeyYfIsgAdMElQ" name="p3SeleniumBridgeDownloadUrl" prompt="p3SeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestP3ActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHX9ghEeyYfIsgAdMElQ" name="p3Username" prompt="p3Username?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline"/>
+    <contextParameter comment="" internalId="_BdJHYNghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystore" prompt="seleniumBridgeHTTPSKeystore?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/Users/kitkline/Development/Clients/GPN/gpn-web-capture-automation/web-capture-automation/src/main/resources/keystore/selenium-bridge-keystore.jks&#10;"/>
+    <contextParameter comment="" internalId="_BdJHYdghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystorePassword" prompt="seleniumBridgeHTTPSKeystorePassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="password"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" internalId="_BdJHYtghEeyYfIsgAdMElQ" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" internalId="_BdJHY9ghEeyYfIsgAdMElQ" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_BdJHZNghEeyYfIsgAdMElQ" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_BdJHZdghEeyYfIsgAdMElQ" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_PN-OotYEEeyck43ORx7WMA" name="WAIT_PERIOD_BEFORE_STARTING_SFTP" prompt="WAIT_PERIOD_BEFORE_STARTING_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="2000000"/>
+    <contextParameter comment="" internalId="_BdJHZtghEeyYfIsgAdMElQ" name="craftCMSPassword" prompt="craftCMSPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="1917Suomi1917"/>
+    <contextParameter comment="" internalId="_BdJHZ9ghEeyYfIsgAdMElQ" name="craftCMSSeleniumBridgeDownloadUrl" prompt="craftCMSSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestCraftCMSActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHaNghEeyYfIsgAdMElQ" name="craftCMSUsername" prompt="craftCMSUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="support"/>
+    <contextParameter comment="" internalId="_BdJHadghEeyYfIsgAdMElQ" name="dbAccount" prompt="dbAccount?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND"/>
+    <contextParameter comment="" internalId="_BdJHatghEeyYfIsgAdMElQ" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND_STORAGE"/>
+    <contextParameter comment="" internalId="_BdJHa9ghEeyYfIsgAdMElQ" name="dbHost" prompt="dbHost?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="35.241.158.122"/>
+    <contextParameter comment="" internalId="_BdJHbNghEeyYfIsgAdMElQ" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="6SM7mF#K)DVuqU&lt;u"/>
+    <contextParameter comment="" internalId="_BdJHbdghEeyYfIsgAdMElQ" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_BdJHbtghEeyYfIsgAdMElQ" name="engagingNetworksPassword" prompt="engagingNetworksPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="af7eiSai10"/>
+    <contextParameter comment="" internalId="_BdJHb9ghEeyYfIsgAdMElQ" name="engagingNetworksSeleniumBridgeDownloadUrl" prompt="engagingNetworksSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestEngagingNetworksCampaignDownload"/>
+    <contextParameter comment="" internalId="_BdJHcNghEeyYfIsgAdMElQ" name="engagingNetworksUsername" prompt="engagingNetworksUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline@greenpeace.org"/>
+    <contextParameter comment="" internalId="_BdJHcdghEeyYfIsgAdMElQ" name="fundraisingWebApplicationBucketName" prompt="fundraisingWebApplicationBucketName?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="gpnordic01-bi-fundraising-platform"/>
+    <contextParameter comment="" internalId="_BdJHctghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketAccessKey" prompt="fundraisingWebApplicationGoogleBucketAccessKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_BdJHc9ghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketPrivateKey" prompt="fundraisingWebApplicationGoogleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_BdJHdNghEeyYfIsgAdMElQ" name="fundraisingWebApplicationToken" prompt="fundraisingWebApplicationToken?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="secretToken123"/>
+    <contextParameter comment="" internalId="_BdJHddghEeyYfIsgAdMElQ" name="outputFileLocation" prompt="outputFileLocation?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/tmp/mas/web_capture/"/>
+    <contextParameter comment="" internalId="_BdJHdtghEeyYfIsgAdMElQ" name="p3Password" prompt="p3Password?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="ABCChnge3MNe789Pleas123"/>
+    <contextParameter comment="" internalId="_BdJHd9ghEeyYfIsgAdMElQ" name="p3SeleniumBridgeDownloadUrl" prompt="p3SeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestP3ActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHeNghEeyYfIsgAdMElQ" name="p3Username" prompt="p3Username?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline"/>
+    <contextParameter comment="" internalId="_BdJHedghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystore" prompt="seleniumBridgeHTTPSKeystore?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/opt/web_capture_keystore/selenium-bridge-keystore.jks"/>
+    <contextParameter comment="" internalId="_BdJHetghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystorePassword" prompt="seleniumBridgeHTTPSKeystorePassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="password"/>
+  </context>
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" internalId="_BdJHe9ghEeyYfIsgAdMElQ" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" internalId="_BdJHfNghEeyYfIsgAdMElQ" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_BdJHfdghEeyYfIsgAdMElQ" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_BdJHftghEeyYfIsgAdMElQ" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_PN-Oo9YEEeyck43ORx7WMA" name="WAIT_PERIOD_BEFORE_STARTING_SFTP" prompt="WAIT_PERIOD_BEFORE_STARTING_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="2000000"/>
+    <contextParameter comment="" internalId="_BdJHf9ghEeyYfIsgAdMElQ" name="craftCMSPassword" prompt="craftCMSPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="1917Suomi1917"/>
+    <contextParameter comment="" internalId="_BdJHgNghEeyYfIsgAdMElQ" name="craftCMSSeleniumBridgeDownloadUrl" prompt="craftCMSSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestCraftCMSActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHgdghEeyYfIsgAdMElQ" name="craftCMSUsername" prompt="craftCMSUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="support"/>
+    <contextParameter comment="" internalId="_BdJHgtghEeyYfIsgAdMElQ" name="dbAccount" prompt="dbAccount?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND"/>
+    <contextParameter comment="" internalId="_BdJHg9ghEeyYfIsgAdMElQ" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND_STORAGE"/>
+    <contextParameter comment="" internalId="_BdJHhNghEeyYfIsgAdMElQ" name="dbHost" prompt="dbHost?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="35.241.158.122"/>
+    <contextParameter comment="" internalId="_BdJHhdghEeyYfIsgAdMElQ" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="6SM7mF#K)DVuqU&lt;u"/>
+    <contextParameter comment="" internalId="_BdJHhtghEeyYfIsgAdMElQ" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_BdJHh9ghEeyYfIsgAdMElQ" name="engagingNetworksPassword" prompt="engagingNetworksPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="af7eiSai10"/>
+    <contextParameter comment="" internalId="_BdJHiNghEeyYfIsgAdMElQ" name="engagingNetworksSeleniumBridgeDownloadUrl" prompt="engagingNetworksSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestEngagingNetworksCampaignDownload"/>
+    <contextParameter comment="" internalId="_BdJHidghEeyYfIsgAdMElQ" name="engagingNetworksUsername" prompt="engagingNetworksUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline@greenpeace.org"/>
+    <contextParameter comment="" internalId="_BdJHitghEeyYfIsgAdMElQ" name="fundraisingWebApplicationBucketName" prompt="fundraisingWebApplicationBucketName?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="gpnordic01-bi-fundraising-platform"/>
+    <contextParameter comment="" internalId="_BdJHi9ghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketAccessKey" prompt="fundraisingWebApplicationGoogleBucketAccessKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_BdJHjNghEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketPrivateKey" prompt="fundraisingWebApplicationGoogleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_BdJHjdghEeyYfIsgAdMElQ" name="fundraisingWebApplicationToken" prompt="fundraisingWebApplicationToken?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="secretToken123"/>
+    <contextParameter comment="" internalId="_BdJHjtghEeyYfIsgAdMElQ" name="outputFileLocation" prompt="outputFileLocation?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/tmp/mas/web_capture/"/>
+    <contextParameter comment="" internalId="_BdJHj9ghEeyYfIsgAdMElQ" name="p3Password" prompt="p3Password?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="ABCChnge3MNe789Pleas123"/>
+    <contextParameter comment="" internalId="_BdJHkNghEeyYfIsgAdMElQ" name="p3SeleniumBridgeDownloadUrl" prompt="p3SeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestP3ActionDownload"/>
+    <contextParameter comment="" internalId="_BdJHkdghEeyYfIsgAdMElQ" name="p3Username" prompt="p3Username?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline"/>
+    <contextParameter comment="" internalId="_BdJHktghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystore" prompt="seleniumBridgeHTTPSKeystore?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/opt/web_capture_keystore/selenium-bridge-keystore.jks"/>
+    <contextParameter comment="" internalId="_BdJHk9ghEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystorePassword" prompt="seleniumBridgeHTTPSKeystorePassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="password"/>
+  </context>
+  <context confirmationNeeded="false" name="PRODUCTION">
+    <contextParameter comment="" internalId="_ACeqkNgiEeyYfIsgAdMElQ" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" internalId="_ACeqkdgiEeyYfIsgAdMElQ" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_ACeqktgiEeyYfIsgAdMElQ" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_ACeqk9giEeyYfIsgAdMElQ" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_PN-OoNYEEeyck43ORx7WMA" name="WAIT_PERIOD_BEFORE_STARTING_SFTP" prompt="WAIT_PERIOD_BEFORE_STARTING_SFTP?" promptNeeded="false" repositoryContextId="built-in" type="id_Long" value="2000000"/>
+    <contextParameter comment="" internalId="_ACeqlNgiEeyYfIsgAdMElQ" name="p3Username" prompt="p3Username?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline"/>
+    <contextParameter comment="" internalId="_ACeqldgiEeyYfIsgAdMElQ" name="p3Password" prompt="p3Password?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="ABCChnge3MNe789Pleas123"/>
+    <contextParameter comment="" internalId="_ACeqltgiEeyYfIsgAdMElQ" name="p3SeleniumBridgeDownloadUrl" prompt="p3SeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestP3ActionDownload"/>
+    <contextParameter comment="" internalId="_ACeql9giEeyYfIsgAdMElQ" name="dbHost" prompt="dbHost?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="35.241.158.122"/>
+    <contextParameter comment="" internalId="_ACeqmNgiEeyYfIsgAdMElQ" name="dbPort" prompt="dbPort?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="3306"/>
+    <contextParameter comment="" internalId="_ACeqmdgiEeyYfIsgAdMElQ" name="dbPassword" prompt="dbPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="6SM7mF#K)DVuqU&lt;u"/>
+    <contextParameter comment="" internalId="_ACeqmtgiEeyYfIsgAdMElQ" name="dbAccount" prompt="dbAccount?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND"/>
+    <contextParameter comment="" internalId="_ACeqm9giEeyYfIsgAdMElQ" name="dbDatabase" prompt="dbDatabase?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="TALEND_STORAGE"/>
+    <contextParameter comment="" internalId="_ACeqnNgiEeyYfIsgAdMElQ" name="outputFileLocation" prompt="outputFileLocation?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/tmp/mas/web_capture/"/>
+    <contextParameter comment="" internalId="_ACeqndgiEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystore" prompt="seleniumBridgeHTTPSKeystore?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="/opt/web_capture_keystore/selenium-bridge-keystore.jks"/>
+    <contextParameter comment="" internalId="_ACeqntgiEeyYfIsgAdMElQ" name="seleniumBridgeHTTPSKeystorePassword" prompt="seleniumBridgeHTTPSKeystorePassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="password"/>
+    <contextParameter comment="" internalId="_ACeqn9giEeyYfIsgAdMElQ" name="engagingNetworksUsername" prompt="engagingNetworksUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="kkline@greenpeace.org"/>
+    <contextParameter comment="" internalId="_ACeqoNgiEeyYfIsgAdMElQ" name="engagingNetworksSeleniumBridgeDownloadUrl" prompt="engagingNetworksSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestEngagingNetworksCampaignDownload"/>
+    <contextParameter comment="" internalId="_ACeqodgiEeyYfIsgAdMElQ" name="engagingNetworksPassword" prompt="engagingNetworksPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="af7eiSai10"/>
+    <contextParameter comment="" internalId="_ACeqotgiEeyYfIsgAdMElQ" name="fundraisingWebApplicationToken" prompt="fundraisingWebApplicationToken?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="secretToken123"/>
+    <contextParameter comment="" internalId="_ACeqo9giEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketAccessKey" prompt="fundraisingWebApplicationGoogleBucketAccessKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="GOOGINWB3TQOIOTKNB6INEPJ"/>
+    <contextParameter comment="" internalId="_ACeqpNgiEeyYfIsgAdMElQ" name="fundraisingWebApplicationGoogleBucketPrivateKey" prompt="fundraisingWebApplicationGoogleBucketPrivateKey?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="i+AwmnmQz+MTjyr2kV1bYgO3bIGerPbVoV5Vxr3d"/>
+    <contextParameter comment="" internalId="_ACeqpdgiEeyYfIsgAdMElQ" name="fundraisingWebApplicationBucketName" prompt="fundraisingWebApplicationBucketName?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="gpnordic01-bi-fundraising-platform"/>
+    <contextParameter comment="" internalId="_ACeqptgiEeyYfIsgAdMElQ" name="craftCMSPassword" prompt="craftCMSPassword?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="1917Suomi1917"/>
+    <contextParameter comment="" internalId="_ACeqp9giEeyYfIsgAdMElQ" name="craftCMSUsername" prompt="craftCMSUsername?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="support"/>
+    <contextParameter comment="" internalId="_ACeqqNgiEeyYfIsgAdMElQ" name="craftCMSSeleniumBridgeDownloadUrl" prompt="craftCMSSeleniumBridgeDownloadUrl?" promptNeeded="false" repositoryContextId="_nVHz4OSlEeeQU9CBr4EC6A" type="id_String" value="http://192.168.148.134/gpn-web-capture-automation/api/requestCraftCMSActionDownload"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="JOB_RUN_VM_ARGUMENTS" show="false" value="{&quot;JOB_RUN_VM_ARGUMENTS&quot;:[&quot;-Dfile.encoding=utf-8&quot;,&quot;-Djavax.net.ssl.trustStore=/Users/kitkline/Development/Clients/GPN/gpn-web-capture-automation/web-capture-automation/src/main/resources/keystore/selenium-bridge-keystore.jks&quot;,&quot;-Djavax.net.ssl.trustStorePassword=password&quot;]}"/>
+    <elementParameter field="CHECK" name="JOB_RUN_VM_ARGUMENTS_OPTION" show="false" value="true"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="544"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:gjGG0Du8wuyi1VKFgj7R+iAE8SM+FU4os+DOefbw"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend_Cloud-Studio-20211109_1610-V8.0.1/Talend-Studio-20211109_1610-V8.0.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:c2+hYOVkmMP15VdpBgFjkNm7O7piCIaLm+IuHgLC"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_Z1j58N5vEeeQU9CBr4EC6A" name="webCaptureAutomationRoutines"/>
+    <routinesParameter id="_WN7d8B-OEeuwwOJuKnLJ2A" name="DataOperation"/>
+    <routinesParameter id="_WUNFEB-OEeuwwOJuKnLJ2A" name="Mathematical"/>
+    <routinesParameter id="_WJPyQB-OEeuwwOJuKnLJ2A" name="Numeric"/>
+    <routinesParameter id="_WQ7uoB-OEeuwwOJuKnLJ2A" name="Relational"/>
+    <routinesParameter id="_WV2q4B-OEeuwwOJuKnLJ2A" name="SQLike"/>
+    <routinesParameter id="_WSsCIB-OEeuwwOJuKnLJ2A" name="StringHandling"/>
+    <routinesParameter id="_WGxGAB-OEeuwwOJuKnLJ2A" name="TalendDataGenerator"/>
+    <routinesParameter id="_WPVzMB-OEeuwwOJuKnLJ2A" name="TalendDate"/>
+    <routinesParameter id="_WMXXsB-OEeuwwOJuKnLJ2A" name="TalendStringUtil"/>
+    <routinesParameter id="_WK9CcB-OEeuwwOJuKnLJ2A" name="TalendString"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Starting Craft CMS Downloads...&quot;);"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="LAUNCH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tMysqlInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-96" sizeX="32" sizeY="35">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" value="MYSQL_5"/>
+    <elementParameter field="CHECK" name="USE_EXISTING_CONNECTION" value="false"/>
+    <elementParameter field="COMPONENT_LIST" name="CONNECTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="HOST" value="context.dbHost"/>
+    <elementParameter field="TEXT" name="PORT" value="context.dbPort"/>
+    <elementParameter field="TEXT" name="DBNAME" value="context.dbDatabase"/>
+    <elementParameter field="TEXT" name="TYPE" show="false" value="MySQL"/>
+    <elementParameter field="TEXT" name="USER" value="context.dbAccount"/>
+    <elementParameter field="PASSWORD" name="PASS" value="enc:system.encryption.key.v1:AGiUDpQJjsPgg5Rnz5pktlEWcaoytaUK/NaGGqoYv0dLOXxWCv1Ak1mVkg0Obw=="/>
+    <elementParameter field="DBTABLE" name="TABLE" value="&quot;WEB_CAPTURE_AUTOMATION_EXECUTION_TIMESTAMPS&quot;"/>
+    <elementParameter field="QUERYSTORE_TYPE" name="QUERYSTORE" value="&quot;&quot;"/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:REPOSITORY_QUERYSTORE_TYPE" show="false" value=""/>
+    <elementParameter field="TECHNICAL" name="QUERYSTORE:QUERYSTORE_TYPE" value="BUILT_IN"/>
+    <elementParameter field="GUESS_SCHEMA" name="GUESS_SCHEMA" value="&quot;&quot;"/>
+    <elementParameter field="MEMO_SQL" name="QUERY" value="&quot;SELECT &#10;  *&#10;FROM `WEB_CAPTURE_AUTOMATION_EXECUTION_TIMESTAMPS` &#10;&quot;"/>
+    <elementParameter field="LABEL" name="NOTE" value="This option only applies when deploying and running in the Talend Runtime"/>
+    <elementParameter field="CHECK" name="SPECIFY_DATASOURCE_ALIAS" value="false"/>
+    <elementParameter field="TEXT" name="DATASOURCE_ALIAS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="MAPPING_TYPE" name="MAPPING" show="false" value="mysql_id"/>
+    <elementParameter field="TEXT" name="PROPERTIES" value="&quot;noDatetimeStringSync=true&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ENABLE_STREAM" value="false"/>
+    <elementParameter field="CHECK" name="TRIM_ALL_COLUMN" value="false"/>
+    <elementParameter field="TABLE" name="TRIM_COLUMN">
+      <elementValue elementRef="SCHEMA_COLUMN" value="KEY"/>
+      <elementValue elementRef="TRIM" value="false"/>
+      <elementValue elementRef="SCHEMA_COLUMN" value="VALUE"/>
+      <elementValue elementRef="TRIM" value="false"/>
+    </elementParameter>
+    <elementParameter field="TEXT" name="LABEL" value="GET_LAST_RUN_DATE"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="PARAMETERS" name="tMysqlInput_1">
+      <column comment="" key="true" length="254" name="KEY" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="254" name="VALUE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tContextLoad" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tContextLoad_1"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" value="true"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" value="true"/>
+    <elementParameter field="CHECK" name="DIEONERROR" value="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="LOAD_CONTEXT_VARIABLES"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" label="PARAMETERS" name="tContextLoad_1">
+      <column comment="" key="true" length="254" name="KEY" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="254" name="VALUE" nullable="false" pattern="" precision="0" sourceType="VARCHAR" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="key" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="value" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="96" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;filePreFix&quot;,&quot;CraftCMS_action_&quot;);&#10;System.setProperty(&quot;lastRunDateIdentifierPrefix&quot;,&quot;CRAFT_CMS_DOWNLOAD_AUTOMATION_ACTION_&quot;);&#10;System.setProperty(&quot;automationName&quot;,&quot;Craft CMS Download Automation&quot;);&#10;System.setProperty(&quot;seleniumBridgeServiceUrl&quot;, context.craftCMSSeleniumBridgeDownloadUrl);&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="LAUNCH"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-480">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;actionid&quot;,&quot;3&quot;);&#10;System.setProperty(&quot;sourceCodePostFix&quot;,&quot;_FOR_GNF_ESSITY2017&quot;);&#10;System.setProperty(&quot;fullSeleniumBridgeServiceUrl&quot;, context.craftCMSSeleniumBridgeDownloadUrl + &quot;?username=&quot; + context.craftCMSUsername + &quot;&amp;password=&quot; + context.craftCMSPassword + &quot;&amp;actionid=&quot; + System.getProperty(&quot;actionid&quot;));&#10;System.setProperty(&quot;lastRunDateIdentifier&quot;,System.getProperty(&quot;lastRunDateIdentifierPrefix&quot;) + System.getProperty(&quot;actionid&quot;));&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SET_VARIABLES_FOR_CRAFT_CMS_ACTION_3_(Essity)"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_3">
+      <column comment="" key="false" length="-1" name="strEmail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCountry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCellphone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="blnContactMe" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datSigned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="basket" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="meta" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="896" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="GENERIC_SELENIUM_BRIDGE_WEB_CAPTURE_DOWNLOAD"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Kit_Development"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GPN_ETL_LEGACY:_MaqzwC9QEeiqi-qvgxd3-g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="1120" posY="-160">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="GENERIC_SELENIUM_BRIDGE_WEB_CAPTURE_UPLOAD_AND_REPORT"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Kit_Development"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GPN_ETL_LEGACY:_nBe0UC-SEeiqi-qvgxd3-g"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="864" posY="256">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Caught error on sub job for: &quot; + System.getProperty(&quot;actionid&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="REPORT_CHILD_ERROR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-384">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;actionid&quot;,&quot;2&quot;);&#10;System.setProperty(&quot;sourceCodePostFix&quot;,&quot;_FOR_ALLFINNISHFORESTS2017&quot;);&#10;System.setProperty(&quot;fullSeleniumBridgeServiceUrl&quot;, context.craftCMSSeleniumBridgeDownloadUrl + &quot;?username=&quot; + context.craftCMSUsername + &quot;&amp;password=&quot; + context.craftCMSPassword + &quot;&amp;actionid=&quot; + System.getProperty(&quot;actionid&quot;));&#10;System.setProperty(&quot;lastRunDateIdentifier&quot;,System.getProperty(&quot;lastRunDateIdentifierPrefix&quot;) + System.getProperty(&quot;actionid&quot;));&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SET_VARIABLES_FOR_CRAFT_CMS_ACTION_2_(General petition)"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_5">
+      <column comment="" key="false" length="-1" name="strEmail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCountry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCellphone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="blnContactMe" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datSigned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="basket" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="meta" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="352" posY="-224">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;actionid&quot;,&quot;5&quot;);&#10;System.setProperty(&quot;sourceCodePostFix&quot;,&quot;_FOR_ALLFINNISHFORESTS2017&quot;);&#10;System.setProperty(&quot;fullSeleniumBridgeServiceUrl&quot;, context.craftCMSSeleniumBridgeDownloadUrl + &quot;?username=&quot; + context.craftCMSUsername + &quot;&amp;password=&quot; + context.craftCMSPassword + &quot;&amp;actionid=&quot; + System.getProperty(&quot;actionid&quot;));&#10;System.setProperty(&quot;lastRunDateIdentifier&quot;,System.getProperty(&quot;lastRunDateIdentifierPrefix&quot;) + System.getProperty(&quot;actionid&quot;));&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SET_VARIABLES_FOR_CRAFT_CMS_ACTION_5_(Hambach)"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_6">
+      <column comment="" key="false" length="-1" name="strEmail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCountry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCellphone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="blnContactMe" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datSigned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="basket" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="meta" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="-32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;actionid&quot;,&quot;4&quot;);&#10;System.setProperty(&quot;sourceCodePostFix&quot;,&quot;_FOR_ALLFINNISHFORESTS2017_SAMIREDLINE&quot;);&#10;System.setProperty(&quot;fullSeleniumBridgeServiceUrl&quot;, context.craftCMSSeleniumBridgeDownloadUrl + &quot;?username=&quot; + context.craftCMSUsername + &quot;&amp;password=&quot; + context.craftCMSPassword + &quot;&amp;actionid=&quot; + System.getProperty(&quot;actionid&quot;));&#10;System.setProperty(&quot;lastRunDateIdentifier&quot;,System.getProperty(&quot;lastRunDateIdentifierPrefix&quot;) + System.getProperty(&quot;actionid&quot;));&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SET_VARIABLES_FOR_CRAFT_CMS_ACTION_4_(Sami)"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_7">
+      <column comment="" key="false" length="-1" name="strEmail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCountry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCellphone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="blnContactMe" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datSigned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="basket" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="meta" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_8"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;actionid&quot;,&quot;6&quot;);&#10;System.setProperty(&quot;sourceCodePostFix&quot;,&quot;_FOREST_LEADGEN_EVO&quot;);&#10;System.setProperty(&quot;fullSeleniumBridgeServiceUrl&quot;, context.craftCMSSeleniumBridgeDownloadUrl + &quot;?username=&quot; + context.craftCMSUsername + &quot;&amp;password=&quot; + context.craftCMSPassword + &quot;&amp;actionid=&quot; + System.getProperty(&quot;actionid&quot;));&#10;System.setProperty(&quot;lastRunDateIdentifier&quot;,System.getProperty(&quot;lastRunDateIdentifierPrefix&quot;) + System.getProperty(&quot;actionid&quot;));&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="//import java.util.List;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SET_VARIABLES_FOR_CRAFT_CMS_ACTION_6_(Evosta)"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_8">
+      <column comment="" key="false" length="-1" name="strEmail" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCountry" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="strCellphone" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="blnContactMe" nullable="true" pattern="" precision="-1" sourceType="" type="id_Boolean" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="datSigned" nullable="true" pattern="&quot;dd-MM-yyyy&quot;" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="basket" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="firstname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="lastname" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="meta" nullable="true" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="1" source="tJava_1" target="tJava_5">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk5"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="2" source="tJava_1" target="tJava_6">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk6"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="3" source="tJava_1" target="tJava_7">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk7"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" outputId="4" source="tJava_1" target="tJava_3">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tJava_8">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk2"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="FLOW" label="row6" lineStyle="0" metaname="tMysqlInput_1" offsetLabelX="50" offsetLabelY="50" source="tMysqlInput_1" target="tContextLoad_1">
+    <elementParameter field="CHECK" name="TRACES_CONNECTION_ENABLE" show="false" value="false"/>
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="KEY"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="VALUE"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row6"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tContextLoad_1" offsetLabelX="0" offsetLabelY="0" source="tContextLoad_1" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_2" offsetLabelX="22" offsetLabelY="0" source="tJava_2" target="tMysqlInput_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk3"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_3" offsetLabelX="0" offsetLabelY="0" source="tJava_3" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk4"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_ERROR" label="OnSubjobError" lineStyle="4" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tJava_4">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobError1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tRunJob_1" offsetLabelX="0" offsetLabelY="0" source="tRunJob_1" target="tRunJob_2">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_5" offsetLabelX="0" offsetLabelY="0" source="tJava_5" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk8"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_6" offsetLabelX="0" offsetLabelY="0" source="tJava_6" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk12"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_7" offsetLabelX="0" offsetLabelY="0" source="tJava_7" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk13"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="SUBJOB_OK" label="OnSubjobOk" lineStyle="1" metaname="tJava_8" offsetLabelX="0" offsetLabelY="0" source="tJava_8" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnSubjobOk3"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tMysqlInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_3"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_5"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_6"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_7"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_8"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_5b6a76b5-0d37-4ad1-8b78-6b898507a39b"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>AbzfBAONk4Y7qb+PGfzLF36bHfAA7ov3ELEcU5Xje3juG7NvOxSuH/beR0/U28JgpinuypmQnlWx&#13;
+SyoHCSSBiA==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_f74e2e6a-0f24-499a-a8b3-8898f822f79c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>LbnSPcxfuCbYU+kdHu6Z4mgGUDGfoyv6oC0VW8zWyqvAjsodkh/9hjvewcj/wi0fPOl+bzRMl1NZ&#13;
+HDrQyHRuoQ==</DigestValue></Reference></SignedInfo><SignatureValue>Y3lqd4mrdoGKYr416CWYeZbg4pl+m/X6bLsWYKZQo9s/T52VXCpICG9Ehy39WeVxi3rU5KeajIQD&#13;
+e3rYcmqosnN5BmChdvOif9mFw6oMv3Uhv/stZQ8Ta/TQSOFyHE9H7z0zEESTx+mdRKTgg0NWgVqb&#13;
+Tzh71uH7gPMFKdl+cuHy4eNdmiOhrkCGTSV9zC1SuO6MUyVuvN2YsMPpenyaqqlaNVs9+eY6/01V&#13;
+DXwNW8V6uD4CWj9MqInf/kWWO4eJpkWMONSGXgXNp4SyPfuZkUhORcMjyWUSuNtJ7i5gjPJI+oHb&#13;
+OF6C2TPZ6SNVni0dCpEraUL1nwVRnGeOMc63Yg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_f74e2e6a-0f24-499a-a8b3-8898f822f79c" Target="#_5b6a76b5-0d37-4ad1-8b78-6b898507a39b"><Timestamp>2022-05-20 12:27:50</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

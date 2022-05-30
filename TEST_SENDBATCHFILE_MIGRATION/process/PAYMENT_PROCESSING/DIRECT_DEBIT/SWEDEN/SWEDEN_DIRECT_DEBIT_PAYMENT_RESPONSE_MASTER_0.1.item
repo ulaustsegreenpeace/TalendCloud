@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="PRODUCTION" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="PRODUCTION">
+    <contextParameter comment="" internalId="_0wdO0NXTEeyRoMuYyjGXgg" name="parameter_SMTP_PASSWORD" prompt="parameter_SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:qgNfUvvTEUFmuamKSa6ZjIlnwhMWcWPe5Nck8xpLpNZ3W0t4vpNi9I2C+Zg="/>
+    <contextParameter comment="" internalId="_0wdO0dXTEeyRoMuYyjGXgg" name="parameter_SMTP_PORT" prompt="parameter_SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_0wdO0tXTEeyRoMuYyjGXgg" name="parameter_SMTP_SERVER" prompt="parameter_SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_0wdO09XTEeyRoMuYyjGXgg" name="parameter_SMTP_USERNAME" prompt="parameter_SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_0wd14NXTEeyRoMuYyjGXgg" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Production/"/>
+    <contextParameter comment="" internalId="_0wd14dXTEeyRoMuYyjGXgg" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Production/"/>
+    <contextParameter comment="" internalId="_0wd14tXTEeyRoMuYyjGXgg" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" internalId="_0wd149XTEeyRoMuYyjGXgg" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="ediftp.hatteland.com"/>
+    <contextParameter comment="" internalId="_0wd15NXTEeyRoMuYyjGXgg" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:Rxj9qjQYWtErWwIZiqKUTTNsO4FasL3l/lCCXKhqKkZW3+EHP2v2hQvCHQ8="/>
+    <contextParameter comment="" internalId="_0wd15dXTEeyRoMuYyjGXgg" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" internalId="_0wd15tXTEeyRoMuYyjGXgg" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" internalId="_0wd159XTEeyRoMuYyjGXgg" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftpgreenpeace"/>
+    <contextParameter comment="" internalId="_0wd16NXTEeyRoMuYyjGXgg" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Incoming/Production/"/>
+    <contextParameter comment="" internalId="_0wd16dXTEeyRoMuYyjGXgg" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Production/"/>
+    <contextParameter comment="" internalId="_0wec8NXTEeyRoMuYyjGXgg" name="parameter_salesforceAPIHost" prompt="parameter_salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" internalId="_0wec8dXTEeyRoMuYyjGXgg" name="parameter_salesforceAPIPassword" prompt="parameter_salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:K9dq0SXd1rlEqPm8ONKQLQ7gHFtDGjDvNOmsfgcfV2shqm+OjBtZ7Zvuobs="/>
+    <contextParameter comment="" internalId="_0wec8tXTEeyRoMuYyjGXgg" name="parameter_salesforceAPIToken" prompt="parameter_salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:nGBqcKMzTJMwwi+El4YHXRhBlTCajMldq+HLxcTv1dDIKogT0RtHzOrJZYS/w5BFOW4vBg=="/>
+    <contextParameter comment="" internalId="_0wec89XTEeyRoMuYyjGXgg" name="parameter_salesforceAPIUsername" prompt="parameter_salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="CLOUD_THOR_SANDBOX">
+    <contextParameter comment="" internalId="_0wec9NXTEeyRoMuYyjGXgg" name="parameter_SMTP_PASSWORD" prompt="parameter_SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:E2TDbya5Bw1g0cMb8eg3A934TX8OYu7jAPlOtcVLLSJRigxh/TH4EkHusWI="/>
+    <contextParameter comment="" internalId="_0wec9dXTEeyRoMuYyjGXgg" name="parameter_SMTP_PORT" prompt="parameter_SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_0wec9tXTEeyRoMuYyjGXgg" name="parameter_SMTP_SERVER" prompt="parameter_SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_0wec99XTEeyRoMuYyjGXgg" name="parameter_SMTP_USERNAME" prompt="parameter_SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_0wec-NXTEeyRoMuYyjGXgg" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/dev/"/>
+    <contextParameter comment="" internalId="_0wec-dXTEeyRoMuYyjGXgg" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/dev/"/>
+    <contextParameter comment="" internalId="_0wec-tXTEeyRoMuYyjGXgg" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" internalId="_0wec-9XTEeyRoMuYyjGXgg" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftp.edigard.no"/>
+    <contextParameter comment="" internalId="_0wec_NXTEeyRoMuYyjGXgg" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:veJoCZySDHyaFhSZ1V/NsvMPSqyKikh+DXNGqkRxMkXyPvJB98pH2fUzF7tUDiD1"/>
+    <contextParameter comment="" internalId="_0wec_dXTEeyRoMuYyjGXgg" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" internalId="_0wec_tXTEeyRoMuYyjGXgg" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" internalId="_0wec_9XTEeyRoMuYyjGXgg" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="greenpeace"/>
+    <contextParameter comment="" internalId="_0wedANXTEeyRoMuYyjGXgg" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Incoming/dev/"/>
+    <contextParameter comment="" internalId="_0wedAdXTEeyRoMuYyjGXgg" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Outgoing/dev/"/>
+    <contextParameter comment="" internalId="_0wedAtXTEeyRoMuYyjGXgg" name="parameter_salesforceAPIHost" prompt="parameter_salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--thor.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" internalId="_0wedA9XTEeyRoMuYyjGXgg" name="parameter_salesforceAPIPassword" prompt="parameter_salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:XzG6/cZZXBZmLCha5JNkZjVHvt9aww50rpABxIHU0gCOwG+gNE6XTOHDeys="/>
+    <contextParameter comment="" internalId="_0wedBNXTEeyRoMuYyjGXgg" name="parameter_salesforceAPIToken" prompt="parameter_salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:V7cKjYKUmHBmlVHu09cUXM7TVfIDFYpTyFTRfSh7hZ4eWme70JrmflaNPuWlejylxiZCPRQ="/>
+    <contextParameter comment="" internalId="_0wedBdXTEeyRoMuYyjGXgg" name="parameter_salesforceAPIUsername" prompt="parameter_salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.thor"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="288"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:AtQv841E7JncSJTU6rPHFM/hBFC5tZUrwFe7J2IY"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend_Cloud-Studio-20211109_1610-V8.0.1/Talend-Studio-20211109_1610-V8.0.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:W8W7Xxtd7yQXGknBdV9KqMsWhxDn5+3xIYtTkdZb"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_E7w0wJblEeqCl7q830b6TA" name="DataOperation"/>
+    <routinesParameter id="_E_lk0JblEeqCl7q830b6TA" name="Mathematical"/>
+    <routinesParameter id="_E4WUYJblEeqCl7q830b6TA" name="Numeric"/>
+    <routinesParameter id="_E9q5QJblEeqCl7q830b6TA" name="Relational"/>
+    <routinesParameter id="_FAiAAJblEeqCl7q830b6TA" name="SQLike"/>
+    <routinesParameter id="_E-pwsJblEeqCl7q830b6TA" name="StringHandling"/>
+    <routinesParameter id="_E2ZMkJblEeqCl7q830b6TA" name="TalendDataGenerator"/>
+    <routinesParameter id="_E8wTQJblEeqCl7q830b6TA" name="TalendDate"/>
+    <routinesParameter id="_E6mXIJblEeqCl7q830b6TA" name="TalendStringUtil"/>
+    <routinesParameter id="_E5eVwJblEeqCl7q830b6TA" name="TalendString"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-256" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.out.println(&quot;Initiating payment response for Swedish Direct Debit&quot;);&#10;System.setProperty(&quot;COUNTRY_CODE&quot;, &quot;SE&quot;);&#10;System.out.println(&quot;Setting country code to: &quot; + System.getProperty(&quot;COUNTRY_CODE&quot;));"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.File;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set Parameters"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_4"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="-32" posY="32">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DIRECT_DEBIT_PAYMENT_RESPONSE"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="UAT02_SANDBOX"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GPN_ETL:_vn-M0PNDEeq7urR5aXmyzQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_4" offsetLabelX="0" offsetLabelY="0" source="tJava_4" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_4"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_9a1c4678-ca06-48f2-841d-0ac4e2f01bd9"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dE6rKnMV+a5gI54V7sp+rgFv5PhT2Tw0ugFmYYGWTFaRNf15Bd26AK1BzjDOmY7KLiU00/jlR/Je&#13;
+cOStRn9DnQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_98594772-37c8-4fa9-b55a-9a8c01f381ee"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ckDZGj4YtAw9zpQp+uDJkvFIKDaHE1H1C4VsA0BLRVqPatlTR91VZKVgh2zF62+xXlC/5gsO4oNb&#13;
+6VF3nRnwyA==</DigestValue></Reference></SignedInfo><SignatureValue>bFI8eTwlMQe8LvlVFqU9wjz7Rl0vn1RlohVPSQ6G6ledZd7k0k//XF461jCD6bszWTF2LqENqL+n&#13;
+eH9npYG5u5xW0LITy/aw8oLH95mGKZl8VBvZlHoHt3FfNL21DLQA3YojG12iLJFWsuCri6Jlwnd4&#13;
+oLAmdotcFxhFHZdggCLX0cNGwGfgjOqE2jvpixvatqAC+3pAZBj5NKH33oBFKEc3HM9tYcyu+A3+&#13;
+hP/CHTB4ecWLvWlzASV6pYrM8nbAEypsuQR/thbWJxJPIFBMoSFWEWUa0CChj/kTSi/z4VFasFOP&#13;
+1JAlXK6p3NgUHKUUdWUMA7Qc1CpLdLmUwRw7Jg==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_98594772-37c8-4fa9-b55a-9a8c01f381ee" Target="#_9a1c4678-ca06-48f2-841d-0ac4e2f01bd9"><Timestamp>2022-05-17 11:37:36</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

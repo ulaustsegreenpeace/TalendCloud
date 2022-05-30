@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="Default" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="Default">
+    <contextParameter comment="" name="dbname" prompt="dbname?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GPNORWAREHOUSE"/>
+    <contextParameter comment="" name="dbpassword" prompt="dbpassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="iephoo1KeeSho"/>
+    <contextParameter comment="" name="dbport" prompt="dbport?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3306"/>
+    <contextParameter comment="" name="dbserver" prompt="dbserver?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="espdbreporting02.nordic.gl3"/>
+    <contextParameter comment="" name="dbuser" prompt="dbuser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="root"/>
+    <contextParameter comment="" name="refeshFileOutputFolder" prompt="refeshFileOutputFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="/Users/kitkline/Downloads/Nordic/Salesforce_Refresh/"/>
+    <contextParameter comment="" name="SalesforceAddContactApi" prompt="SalesforceAddContactApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/data/v43.0/sobjects/Contact/"/>
+    <contextParameter comment="" name="SalesforceClientID" prompt="SalesforceClientID?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3MVG9Rd3qC6oMalV3H0wJFCAZIVfW4KpPM8xyb2BC1s3.gsJLiNAVzV.2cB4UbCFw4WelOTqp4mKC3Wrt_QWj"/>
+    <contextParameter comment="" name="SalesforceLoginApi" prompt="SalesforceLoginApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/oauth2/token"/>
+    <contextParameter comment="" name="SalesforcePassword" prompt="SalesforcePassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="af7eiSai11!4"/>
+    <contextParameter comment="" name="SalesforceSecret" prompt="SalesforceSecret?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="7987232218048852537"/>
+    <contextParameter comment="" name="SalesforceSFTPPassword" prompt="SalesforceSFTPPassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GtErPd3@ApMoErt2o2"/>
+    <contextParameter comment="" name="SalesforceSFTPServer" prompt="SalesforceSFTPServer?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="ftp.s10.exacttarget.com"/>
+    <contextParameter comment="" name="SalesforceSFTPUploadFolder" prompt="SalesforceSFTPUploadFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="Triggered_Automations"/>
+    <contextParameter comment="" name="SalesforceSFTPUser" prompt="SalesforceSFTPUser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="100011333"/>
+    <contextParameter comment="" name="SalesforceUsername" prompt="SalesforceUsername?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="thetalendedkit@kitkline.co.uk"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="Production">
+    <contextParameter comment="" name="dbname" prompt="dbname?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GPNORWAREHOUSE"/>
+    <contextParameter comment="" name="dbpassword" prompt="dbpassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="iephoo1KeeSho"/>
+    <contextParameter comment="" name="dbport" prompt="dbport?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3306"/>
+    <contextParameter comment="" name="dbserver" prompt="dbserver?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="espdbreporting02.nordic.gl3"/>
+    <contextParameter comment="" name="dbuser" prompt="dbuser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="root"/>
+    <contextParameter comment="" name="refeshFileOutputFolder" prompt="refeshFileOutputFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="/opt/mas/salesforce/"/>
+    <contextParameter comment="" name="SalesforceAddContactApi" prompt="SalesforceAddContactApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/data/v43.0/sobjects/Contact/"/>
+    <contextParameter comment="" name="SalesforceClientID" prompt="SalesforceClientID?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3MVG9Rd3qC6oMalV3H0wJFCAZIVfW4KpPM8xyb2BC1s3.gsJLiNAVzV.2cB4UbCFw4WelOTqp4mKC3Wrt_QWj"/>
+    <contextParameter comment="" name="SalesforceLoginApi" prompt="SalesforceLoginApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/oauth2/token"/>
+    <contextParameter comment="" name="SalesforcePassword" prompt="SalesforcePassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="af7eiSai11!4"/>
+    <contextParameter comment="" name="SalesforceSecret" prompt="SalesforceSecret?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="7987232218048852537"/>
+    <contextParameter comment="" name="SalesforceSFTPPassword" prompt="SalesforceSFTPPassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GtErPd3@ApMoErt2o2"/>
+    <contextParameter comment="" name="SalesforceSFTPServer" prompt="SalesforceSFTPServer?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="ftp.s10.exacttarget.com"/>
+    <contextParameter comment="" name="SalesforceSFTPUploadFolder" prompt="SalesforceSFTPUploadFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="Triggered_Automations"/>
+    <contextParameter comment="" name="SalesforceSFTPUser" prompt="SalesforceSFTPUser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="100011333"/>
+    <contextParameter comment="" name="SalesforceUsername" prompt="SalesforceUsername?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="thetalendedkit@kitkline.co.uk"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="Development">
+    <contextParameter comment="" name="dbname" prompt="dbname?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GPNORWAREHOUSE"/>
+    <contextParameter comment="" name="dbpassword" prompt="dbpassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="iephoo1KeeSho"/>
+    <contextParameter comment="" name="dbport" prompt="dbport?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3306"/>
+    <contextParameter comment="" name="dbserver" prompt="dbserver?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="espdbreporting04.nordic.gl3"/>
+    <contextParameter comment="" name="dbuser" prompt="dbuser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="root"/>
+    <contextParameter comment="" name="refeshFileOutputFolder" prompt="refeshFileOutputFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="/opt/mas/salesforce/"/>
+    <contextParameter comment="" name="SalesforceAddContactApi" prompt="SalesforceAddContactApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/data/v43.0/sobjects/Contact/"/>
+    <contextParameter comment="" name="SalesforceClientID" prompt="SalesforceClientID?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3MVG9X0_oZyBSzHrnzENhROatHOef2mo6tgTLxEiCDpMkzdEFeVlCSTyxgMH0FrYUqr1LQCsXr78VskSV4b86"/>
+    <contextParameter comment="" name="SalesforceLoginApi" prompt="SalesforceLoginApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://cs85.salesforce.com/services/oauth2/token"/>
+    <contextParameter comment="" name="SalesforcePassword" prompt="SalesforcePassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="af7eiSai11!2"/>
+    <contextParameter comment="" name="SalesforceSecret" prompt="SalesforceSecret?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="4634566640585307468"/>
+    <contextParameter comment="" name="SalesforceSFTPPassword" prompt="SalesforceSFTPPassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GtErPd3@ApMoErt2o2"/>
+    <contextParameter comment="" name="SalesforceSFTPServer" prompt="SalesforceSFTPServer?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="ftp.s10.exacttarget.com"/>
+    <contextParameter comment="" name="SalesforceSFTPUploadFolder" prompt="SalesforceSFTPUploadFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="Triggered_Automations"/>
+    <contextParameter comment="" name="SalesforceSFTPUser" prompt="SalesforceSFTPUser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="100011333"/>
+    <contextParameter comment="" name="SalesforceUsername" prompt="SalesforceUsername?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="kit@kitkline.co.uk"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="Kit_Local_Development">
+    <contextParameter comment="" name="dbname" prompt="dbname?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GPNORWAREHOUSE"/>
+    <contextParameter comment="" name="dbpassword" prompt="dbpassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="iephoo1KeeSho"/>
+    <contextParameter comment="" name="dbport" prompt="dbport?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3306"/>
+    <contextParameter comment="" name="dbserver" prompt="dbserver?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="espdbreporting02.nordic.gl3"/>
+    <contextParameter comment="" name="dbuser" prompt="dbuser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="root"/>
+    <contextParameter comment="" name="refeshFileOutputFolder" prompt="refeshFileOutputFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="/Users/kitkline/Downloads/Nordic/Salesforce_Refresh/"/>
+    <contextParameter comment="" name="SalesforceAddContactApi" prompt="SalesforceAddContactApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/data/v43.0/sobjects/Contact/"/>
+    <contextParameter comment="" name="SalesforceClientID" prompt="SalesforceClientID?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3MVG9Rd3qC6oMalV3H0wJFCAZIVfW4KpPM8xyb2BC1s3.gsJLiNAVzV.2cB4UbCFw4WelOTqp4mKC3Wrt_QWj"/>
+    <contextParameter comment="" name="SalesforceLoginApi" prompt="SalesforceLoginApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/oauth2/token"/>
+    <contextParameter comment="" name="SalesforcePassword" prompt="SalesforcePassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="af7eiSai11!4"/>
+    <contextParameter comment="" name="SalesforceSecret" prompt="SalesforceSecret?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="7987232218048852537"/>
+    <contextParameter comment="" name="SalesforceSFTPPassword" prompt="SalesforceSFTPPassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GtErPd3@ApMoErt2o2"/>
+    <contextParameter comment="" name="SalesforceSFTPServer" prompt="SalesforceSFTPServer?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="ftp.s10.exacttarget.com"/>
+    <contextParameter comment="" name="SalesforceSFTPUploadFolder" prompt="SalesforceSFTPUploadFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="Triggered_Automations"/>
+    <contextParameter comment="" name="SalesforceSFTPUser" prompt="SalesforceSFTPUser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="100011333"/>
+    <contextParameter comment="" name="SalesforceUsername" prompt="SalesforceUsername?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="thetalendedkit@kitkline.co.uk"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="Local_Development">
+    <contextParameter comment="" name="dbname" prompt="dbname?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GPNORWAREHOUSE"/>
+    <contextParameter comment="" name="dbpassword" prompt="dbpassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="iephoo1KeeSho"/>
+    <contextParameter comment="" name="dbport" prompt="dbport?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3306"/>
+    <contextParameter comment="" name="dbserver" prompt="dbserver?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="espdbreporting02.nordic.gl3"/>
+    <contextParameter comment="" name="dbuser" prompt="dbuser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="root"/>
+    <contextParameter comment="" name="refeshFileOutputFolder" prompt="refeshFileOutputFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="/Users/kitkline/Downloads/Nordic/Salesforce_Refresh/"/>
+    <contextParameter comment="" name="SalesforceAddContactApi" prompt="SalesforceAddContactApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/data/v43.0/sobjects/Contact/"/>
+    <contextParameter comment="" name="SalesforceClientID" prompt="SalesforceClientID?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="3MVG9Rd3qC6oMalV3H0wJFCAZIVfW4KpPM8xyb2BC1s3.gsJLiNAVzV.2cB4UbCFw4WelOTqp4mKC3Wrt_QWj"/>
+    <contextParameter comment="" name="SalesforceLoginApi" prompt="SalesforceLoginApi?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="https://eu14.salesforce.com/services/oauth2/token"/>
+    <contextParameter comment="" name="SalesforcePassword" prompt="SalesforcePassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="af7eiSai11!4"/>
+    <contextParameter comment="" name="SalesforceSecret" prompt="SalesforceSecret?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="7987232218048852537"/>
+    <contextParameter comment="" name="SalesforceSFTPPassword" prompt="SalesforceSFTPPassword?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="GtErPd3@ApMoErt2o2"/>
+    <contextParameter comment="" name="SalesforceSFTPServer" prompt="SalesforceSFTPServer?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="ftp.s10.exacttarget.com"/>
+    <contextParameter comment="" name="SalesforceSFTPUploadFolder" prompt="SalesforceSFTPUploadFolder?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="Triggered_Automations"/>
+    <contextParameter comment="" name="SalesforceSFTPUser" prompt="SalesforceSFTPUser?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="100011333"/>
+    <contextParameter comment="" name="SalesforceUsername" prompt="SalesforceUsername?" promptNeeded="false" repositoryContextId="_EKuaIGOCEeijN5p439Bk6A" type="id_String" value="thetalendedkit@kitkline.co.uk"/>
+    <contextParameter comment="" name="SMTP_PASSWORD" prompt="SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="mxhfzvzvyidtvphr"/>
+    <contextParameter comment="" name="SMTP_PORT" prompt="SMTP_PORT?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="465"/>
+    <contextParameter comment="" name="SMTP_SERVER" prompt="SMTP_SERVER?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" name="SMTP_USERNAME" prompt="SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_ijV7MLiYEeeAC8ZiNrB86w" type="id_String" value="tjobs@greenpeace.org"/>
+  </context>
+  <parameters>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:bPIGkpXUgmZtDxbvHM1+MT2VQUfl/eTt/IAAOwqm"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;/Users/kitkline/JETL-Workspace-ETL3/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:85gz9Bw5AmrCp4KCii1tWFiuU8nA9pKFP35OC4t7"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_Z1j58N5vEeeQU9CBr4EC6A" name="webCaptureAutomationRoutines"/>
+    <routinesParameter id="_WN7d8B-OEeuwwOJuKnLJ2A" name="DataOperation"/>
+    <routinesParameter id="_WUNFEB-OEeuwwOJuKnLJ2A" name="Mathematical"/>
+    <routinesParameter id="_WJPyQB-OEeuwwOJuKnLJ2A" name="Numeric"/>
+    <routinesParameter id="_WQ7uoB-OEeuwwOJuKnLJ2A" name="Relational"/>
+    <routinesParameter id="_WV2q4B-OEeuwwOJuKnLJ2A" name="SQLike"/>
+    <routinesParameter id="_WSsCIB-OEeuwwOJuKnLJ2A" name="StringHandling"/>
+    <routinesParameter id="_WGxGAB-OEeuwwOJuKnLJ2A" name="TalendDataGenerator"/>
+    <routinesParameter id="_WPVzMB-OEeuwwOJuKnLJ2A" name="TalendDate"/>
+    <routinesParameter id="_WMXXsB-OEeuwwOJuKnLJ2A" name="TalendStringUtil"/>
+    <routinesParameter id="_WK9CcB-OEeuwwOJuKnLJ2A" name="TalendString"/>
+  </parameters>
+  <node componentName="tLogCatcher" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="128" posY="288">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="CHECK" name="CATCH_JAVA_EXCEPTION" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TDIE" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TWARN" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_TACTIONFAILURE" show="false" value="true"/>
+    <elementParameter field="TEXT" name="LABEL" value="CATCH_ANY_ERROR"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tLogCatcher_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tSendMail" componentVersion="0.101" offsetLabelX="-1" offsetLabelY="6" posX="128" posY="544">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tSendMail_1"/>
+    <elementParameter field="TEXT" name="TO" value="&quot;gpnordic-mas-system-notifications-group@greenpeace.org&quot;"/>
+    <elementParameter field="TEXT" name="FROM" value="&quot;etl-admin@greenpeace.org&quot;"/>
+    <elementParameter field="CHECK" name="NEED_PERSONAL_NAME" value="false"/>
+    <elementParameter field="TEXT" name="PERSONAL_NAME" show="false" value="&quot;sender&quot;"/>
+    <elementParameter field="TEXT" name="CC" value=""/>
+    <elementParameter field="TEXT" name="BCC" value=""/>
+    <elementParameter field="TEXT" name="SUBJECT" value="&quot;GPN Salesforce Synch - Add New People to Salesforce Failed&quot;"/>
+    <elementParameter field="MEMO_MESSAGE" name="MESSAGE" value="&quot;GPN Salesforce Synch - Add New People to Salesforce Failed&quot;"/>
+    <elementParameter field="CHECK" name="CHECK_ATTACHMENT" value="true"/>
+    <elementParameter field="TABLE" name="ATTACHMENTS"/>
+    <elementParameter field="TABLE" name="HEADERS"/>
+    <elementParameter field="TEXT" name="SMTP_HOST" value="context.SMTP_SERVER"/>
+    <elementParameter field="TEXT" name="SMTP_PORT" value="context.SMTP_PORT"/>
+    <elementParameter field="CHECK" name="SSL" value="true"/>
+    <elementParameter field="CHECK" name="STARTTLS" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="IMPORTANCE" value="Normal"/>
+    <elementParameter field="CHECK" name="NEED_AUTH" value="true"/>
+    <elementParameter field="TEXT" name="AUTH_USERNAME" value="context.SMTP_USERNAME"/>
+    <elementParameter field="PASSWORD" name="AUTH_PASSWORD" value="enc:system.encryption.key.v1:XW0NM11Nmb3LWEagm6EC8Sw40F3k775G6lNyQ/M/qNAanHuuZfvDvB2vIZ5SI385Pw=="/>
+    <elementParameter field="CHECK" name="DIE_ON_ERROR" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="TEXT_SUBTYPE" value="plain"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="SET_LOCALHOST" value="false"/>
+    <elementParameter field="TEXT" name="LOCALHOST" show="false" value="&quot;localhost&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="SEND_INTEGRATION_FAILED_WARNING"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tSendMail_1">
+      <column defaultValue="" key="false" length="0" name="moment" nullable="true" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;" precision="0" sourceType="" type="id_Date" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="root_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="20" name="father_pid" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="project" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="job" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="50" name="context" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="priority" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="type" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="origin" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="255" name="message" nullable="true" precision="0" sourceType="" type="id_String" usefulColumn="true"/>
+      <column defaultValue="" key="false" length="3" name="code" nullable="true" precision="0" sourceType="" type="id_Integer" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="128">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SALESFORCE_ASSIGN_SF_UUIDS"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Local_Development"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value=""/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="256" posY="96">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="SALESFORCE_ADD_NEW_CONSTITUENTS_TO_UUID_MASTER"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="Default"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="_-FEqgGOBEeijN5p439Bk6A"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT"/>
+    <metadata connector="FLOW" name="tRunJob_2"/>
+  </node>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tLogCatcher_1" offsetLabelX="0" offsetLabelY="0" source="tLogCatcher_1" target="tSendMail_1">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="moment"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="root_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="father_pid"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="project"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="job"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="context"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="priority"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="type"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="origin"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="message"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+      <elementValue elementRef="TRACE_COLUMN" value="code"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tRunJob_2" offsetLabelX="0" offsetLabelY="0" source="tRunJob_2" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+    <elementParameter field="MEMO" name="FAILURE_INSTRUCTIONS" value=""/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tLogCatcher_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_2"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="160;190;240"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="220;220;250"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_3e5cbe4a-bf7d-41ca-9277-035641c7c205"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7TFWlh1/MGNJPrWL+OHXVgIIiO1awnKgoZRfYpUwyk1G6z+p36BTH93WuH1Ve7itMn2qZ3fwTqxg&#13;
+PHAtldpMAQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_b9ee6378-eec0-46d9-b52f-fb62d7b5751c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>knUh7AK/ZPUVEiFajfBbqMc9t3vGcW+b+lqbl4vAlfQe+qHDQnIV4Xq7b67WZ+ueyh5xi3VlRvxS&#13;
+0KA3oCfjVA==</DigestValue></Reference></SignedInfo><SignatureValue>Tlg6ChBK7ST8UI/To2XFAcdrdiXBPhpuvKQVa/tBBKdZ4oY39AzL3Uf3bokXE5yB5oQPa7ESRtFC&#13;
+Nu8p/87TGb/yup1CFXUYgL2T1XVKL9eclDIEWFdiSKZgTL8ywH56PrZkMeUw96W9q/C5m3teTOwC&#13;
+AmEOV9iGqtQUCliPZPBRMGdwbcoj6Ffb58fSlOla3PZUUe0RxPW5CGC/VCOYlzqnZX+n4quM7VfQ&#13;
+JTTKjRoyoPQFY4fFbULekSLZ/aVlAeZrANIMrhNKXCAQcMLGh9854T9Wbs06UBd3eBVsykFA4tqV&#13;
+9dIRmDsPux1pO/n55rX8HDee7PRGyZeIx8JsbQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_b9ee6378-eec0-46d9-b52f-fb62d7b5751c" Target="#_3e5cbe4a-bf7d-41ca-9277-035641c7c205"><Timestamp>2022-05-17 17:10:21</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>

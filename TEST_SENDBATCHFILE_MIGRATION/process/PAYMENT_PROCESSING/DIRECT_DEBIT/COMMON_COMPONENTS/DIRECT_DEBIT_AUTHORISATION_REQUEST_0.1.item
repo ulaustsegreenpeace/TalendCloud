@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ProcessType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" defaultContext="CLOUD_THOR_SANDBOX" jobType="Standard" xmi:version="2.0">
+  <context confirmationNeeded="false" name="PRODUCTION">
+    <contextParameter comment="" internalId="_GV2WANXFEeyRoMuYyjGXgg" name="parameter_SMTP_PASSWORD" prompt="parameter_SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:nlR7x36AFWMgfuxuTnfDXpC2AyyHG/xD5jYtYV76voekSQl0nscn60YS6VY="/>
+    <contextParameter comment="" internalId="_GV2WAdXFEeyRoMuYyjGXgg" name="parameter_SMTP_PORT" prompt="parameter_SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_GV2WAtXFEeyRoMuYyjGXgg" name="parameter_SMTP_SERVER" prompt="parameter_SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_GV2WA9XFEeyRoMuYyjGXgg" name="parameter_SMTP_USERNAME" prompt="parameter_SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_GV4LMNXFEeyRoMuYyjGXgg" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/Production/"/>
+    <contextParameter comment="" internalId="_GV4LMdXFEeyRoMuYyjGXgg" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/Production/"/>
+    <contextParameter comment="" internalId="_GV4LMtXFEeyRoMuYyjGXgg" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" internalId="_GV4LM9XFEeyRoMuYyjGXgg" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="ediftp.hatteland.com"/>
+    <contextParameter comment="" internalId="_GV4LNNXFEeyRoMuYyjGXgg" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:F8iiQwXLIheUgkBrOEkxROGzdfUeVh6HC+Vb1zYP4iVC2zTuzHjRJ5cKuIM="/>
+    <contextParameter comment="" internalId="_GV4LNdXFEeyRoMuYyjGXgg" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" internalId="_GV4LNtXFEeyRoMuYyjGXgg" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" internalId="_GV4LN9XFEeyRoMuYyjGXgg" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftpgreenpeace"/>
+    <contextParameter comment="" internalId="_GV4LONXFEeyRoMuYyjGXgg" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Incoming/Production/"/>
+    <contextParameter comment="" internalId="_GV4LOdXFEeyRoMuYyjGXgg" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Outgoing/Production/"/>
+    <contextParameter comment="" internalId="_GV5ZUNXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIHost" prompt="parameter_salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" internalId="_GV5ZUdXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIPassword" prompt="parameter_salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:pRTZPzC873CQNLXOop0KXt+WkAxJt0l/6zN0Jrx+uf03SC12EZ36weCgOT8="/>
+    <contextParameter comment="" internalId="_GV6AYNXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIToken" prompt="parameter_salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:Z0JguHPOmDy7EOxCX4yDEDAdz/p3K467U/dHYerQs+bq5oHEifetOKsBhE9K56ymjzA/fw=="/>
+    <contextParameter comment="" internalId="_GV6AYdXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIUsername" prompt="parameter_salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org"/>
+  </context>
+  <context confirmationNeeded="false" name="CLOUD_THOR_SANDBOX">
+    <contextParameter comment="" internalId="_GV6AYtXFEeyRoMuYyjGXgg" name="parameter_SMTP_PASSWORD" prompt="parameter_SMTP_PASSWORD?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_Password" value="enc:system.encryption.key.v1:W8kGAv5hGkxJOLulv+o8P+ui51HSL8PTNidMW32FzcMDSjz6OMoqnCqpvZM="/>
+    <contextParameter comment="" internalId="_GV6AY9XFEeyRoMuYyjGXgg" name="parameter_SMTP_PORT" prompt="parameter_SMTP_PORT?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="465"/>
+    <contextParameter comment="" internalId="_GV6AZNXFEeyRoMuYyjGXgg" name="parameter_SMTP_SERVER" prompt="parameter_SMTP_SERVER?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="smtp.googlemail.com"/>
+    <contextParameter comment="" internalId="_GV6AZdXFEeyRoMuYyjGXgg" name="parameter_SMTP_USERNAME" prompt="parameter_SMTP_USERNAME?" promptNeeded="false" repositoryContextId="_GnE-YKveEeqW2pOjYOJtpg" type="id_String" value="tjobs@greenpeace.org"/>
+    <contextParameter comment="" internalId="_GV6AZtXFEeyRoMuYyjGXgg" name="ddInputDirectory" prompt="ddInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Incoming/dev/"/>
+    <contextParameter comment="" internalId="_GV6AZ9XFEeyRoMuYyjGXgg" name="ddOutputDirectory" prompt="ddOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/Direct_Debit/Outgoing/dev/"/>
+    <contextParameter comment="" internalId="_GV6AaNXFEeyRoMuYyjGXgg" name="ediFTPDownloadFolder" prompt="ediFTPDownloadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/outbox/"/>
+    <contextParameter comment="" internalId="_GV6AadXFEeyRoMuYyjGXgg" name="ediFTPHost" prompt="ediFTPHost?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="sftp.edigard.no"/>
+    <contextParameter comment="" internalId="_GV6AatXFEeyRoMuYyjGXgg" name="ediFTPPassword" prompt="ediFTPPassword?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Password" value="enc:system.encryption.key.v1:GLUwT0nm4PR0pRDb+ZmCr4wPeL7Ym3bcoJuLMH2K3nVHiEIIXsKLJTOrlfCdl3ZA"/>
+    <contextParameter comment="" internalId="_GV6Aa9XFEeyRoMuYyjGXgg" name="ediFTPPort" prompt="ediFTPPort?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_Integer" value="22"/>
+    <contextParameter comment="" internalId="_GV6AbNXFEeyRoMuYyjGXgg" name="ediFTPUploadFolder" prompt="ediFTPUploadFolder?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/inbox/"/>
+    <contextParameter comment="" internalId="_GV6AbdXFEeyRoMuYyjGXgg" name="ediFTPUser" prompt="ediFTPUser?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="greenpeace"/>
+    <contextParameter comment="" internalId="_GV6AbtXFEeyRoMuYyjGXgg" name="ocrInputDirectory" prompt="ocrInputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Incoming/dev/"/>
+    <contextParameter comment="" internalId="_GV6Ab9XFEeyRoMuYyjGXgg" name="ocrOutputDirectory" prompt="ocrOutputDirectory?" promptNeeded="false" repositoryContextId="_0-A54OcNEeqq_swvi6p9og" type="id_String" value="/tmp/GPN_PAYMENT_PROCESSING/OCR/Outgoing/dev/"/>
+    <contextParameter comment="" internalId="_GV6AcNXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIHost" prompt="parameter_salesforceAPIHost?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="https://gpnordic--thor.my.salesforce.com/services/Soap/u/47.0"/>
+    <contextParameter comment="" internalId="_GV6AcdXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIPassword" prompt="parameter_salesforceAPIPassword?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:C7YkosPx1c7Fu7eWaS3mAPnwRpD9sxf/oswh48IOa7zYUZgiYUQoDOFKL5M="/>
+    <contextParameter comment="" internalId="_GV6ActXFEeyRoMuYyjGXgg" name="parameter_salesforceAPIToken" prompt="parameter_salesforceAPIToken?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_Password" value="enc:system.encryption.key.v1:K0Jc1OylDm4WQ2pctGkadAVrS1XlFTo887SLKWPG59hM1Q1bg22DM9wkRMqmnsLZLsAciTw="/>
+    <contextParameter comment="" internalId="_GV6Ac9XFEeyRoMuYyjGXgg" name="parameter_salesforceAPIUsername" prompt="parameter_salesforceAPIUsername?" promptNeeded="false" repositoryContextId="_DTKQILF8EeqEnaemf4B1iA" type="id_String" value="talend_cdt@greenpeace.org.thor"/>
+  </context>
+  <parameters>
+    <elementParameter field="CLOSED_LIST" name="LOG4J_RUN_LEVEL" show="false" value="Info"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_X" show="false" value="0"/>
+    <elementParameter field="TEXT" name="SCREEN_OFFSET_Y" show="false" value="0"/>
+    <elementParameter field="TEXT" name="REPOSITORY_CONNECTION_ID" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_PROPERTY_TYPENAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_DISTRIBUTION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_HADOOP_VERSION" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USERNAME" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_GROUP" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_USE_KEYTAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KT_PRINCIPAL" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_KEY_TAB" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_ENABLE_OO_KERBEROS" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_NAME_NODE_END_POINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_JOB_TRACKER_ENDPOINT" show="false" value=""/>
+    <elementParameter field="TEXT" name="OOZIE_END_POINT" show="false" value=""/>
+    <elementParameter field="CHECK" name="IMPLICITCONTEXT_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="STATANDLOG_USE_PROJECT_SETTINGS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="MULTI_THREAD_EXECATION" value="false"/>
+    <elementParameter field="TEXT" name="PARALLELIZE_UNIT_SIZE" value="25000"/>
+    <elementParameter field="CHECK" name="IMPLICIT_TCONTEXTLOAD" value="false"/>
+    <elementParameter field="RADIO" name="FROM_FILE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="RADIO" name="FROM_DATABASE_FLAG_IMPLICIT_CONTEXT" show="false" value="false"/>
+    <elementParameter field="FILE" name="IMPLICIT_TCONTEXTLOAD_FILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="OVERRIDE_ENCODING_FLAG" show="false" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="OVERRIDE_ENCODING_IN_EXTRA" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="OVERRIDE_ENCODING_IN_EXTRA:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION_IMPLICIT_CONTEXT" show="false" value=""/>
+    <elementParameter field="TEXT" name="URL_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR_IMPLICIT_CONTEXT" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:oDHXo0TtG4FHB3eXyNdsGPCK6KOflGliSeec71wu"/>
+    <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CLOSED_LIST" name="LOAD_NEW_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CLOSED_LIST" name="NOT_LOAD_OLD_VARIABLE" show="false" value="Warning"/>
+    <elementParameter field="CHECK" name="PRINT_OPERATIONS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_ERROR" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_WARNINGS" show="false" value="false"/>
+    <elementParameter field="CHECK" name="DISABLE_INFO" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_STATCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_LOGCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_METERCATCHER_FLAG" value="false"/>
+    <elementParameter field="CHECK" name="ON_CONSOLE_FLAG" show="false" value="false"/>
+    <elementParameter field="CHECK" name="ON_FILES_FLAG" show="false" value="false"/>
+    <elementParameter field="DIRECTORY" name="FILE_PATH" show="false" value="&quot;C:/Talend_Cloud-Studio-20211109_1610-V8.0.1/Talend-Studio-20211109_1610-V8.0.1/workspace/.metadata&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_STATS" show="false" value="&quot;stats_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_LOGS" show="false" value="&quot;logs_file.txt&quot;"/>
+    <elementParameter field="TEXT" name="FILENAME_METTER" show="false" value="&quot;meter_file.txt&quot;"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" show="false" value="ISO-8859-15"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" show="false" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="ON_DATABASE_FLAG" show="false" value="false"/>
+    <elementParameter field="CLOSED_LIST" name="DB_TYPE" show="false" value="tJDBCOutput"/>
+    <elementParameter field="CLOSED_LIST" name="DB_VERSION" show="false" value="ORACLE_12"/>
+    <elementParameter field="TEXT" name="URL" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TABLE" name="DRIVER_JAR" show="false"/>
+    <elementParameter field="TEXT" name="DRIVER_CLASS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="HOST" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PORT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DATASOURCE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="DBNAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LOCAL_SERVICE_NAME" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:nG04j8dnOhpZFQVXTBZlQXOKe3M/WbIYxdt5vV8N"/>
+    <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
+    <elementParameter field="DBTABLE" name="TABLE_METER" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CATCH_RUNTIME_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_ERRORS" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_USER_WARNING" show="false" value="true"/>
+    <elementParameter field="CHECK" name="CATCH_REALTIME_STATS" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_HEADERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="HEADER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="HEADER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADER_IMPORT" show="false" value=""/>
+    <elementParameter field="TEXT" name="HEADERFOOTER_FOOTERID" show="false" value=""/>
+    <elementParameter field="CHECK" name="FOOTER_ENABLED" show="false" value="false"/>
+    <elementParameter field="TEXT" name="FOOTER_LIBRARY" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_CODE" show="false" value=""/>
+    <elementParameter field="TEXT" name="FOOTER_IMPORT" show="false" value=""/>
+    <routinesParameter id="_E7w0wJblEeqCl7q830b6TA" name="DataOperation"/>
+    <routinesParameter id="_E_lk0JblEeqCl7q830b6TA" name="Mathematical"/>
+    <routinesParameter id="_E4WUYJblEeqCl7q830b6TA" name="Numeric"/>
+    <routinesParameter id="_E9q5QJblEeqCl7q830b6TA" name="Relational"/>
+    <routinesParameter id="_FAiAAJblEeqCl7q830b6TA" name="SQLike"/>
+    <routinesParameter id="_E-pwsJblEeqCl7q830b6TA" name="StringHandling"/>
+    <routinesParameter id="_E2ZMkJblEeqCl7q830b6TA" name="TalendDataGenerator"/>
+    <routinesParameter id="_E8wTQJblEeqCl7q830b6TA" name="TalendDate"/>
+    <routinesParameter id="_E6mXIJblEeqCl7q830b6TA" name="TalendStringUtil"/>
+    <routinesParameter id="_E5eVwJblEeqCl7q830b6TA" name="TalendString"/>
+  </parameters>
+  <node componentName="tJava" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="224" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="MEMO_JAVA" name="CODE" value="System.setProperty(&quot;LOCAL_PATH_FRAGMENT&quot;, &quot;Authorisation_Requests&quot;);&#10;System.setProperty(&quot;SOQL_TO_FIND_FILE_EXPORT_RECORDS&quot;, &quot;SELECT Id FROM gcbe__File_Export_Record__c WHERE gcbe__File_Export_Record__c.gcbe__File_Specification__r.Name = 'DD Authorisation Request File' AND gcbe__Batch_Status__c = 'Completed' AND gcbe__Successfully_Written_Count__c &gt; 0 AND Country_Code__c = '&quot; + System.getProperty(&quot;COUNTRY_CODE&quot;) + &quot;'&quot;);&#10;System.setProperty(&quot;OUTPUT_FILENAME_FRAGMENT&quot;, &quot;_Authorisation_Request_&quot;);&#10;System.setProperty(&quot;SFTP_UPLOAD_PATH_FRAGMENT&quot;, &quot;/AuthorisationRequestFiles/&quot;);&#10;System.setProperty(&quot;PROCESS_NAME&quot;, &quot;Direct Debit authorisation requests&quot;);&#10;System.setProperty(&quot;PROFILE&quot;, &quot;AUTHORISATION&quot;);&#10;&#10;System.setProperty(&quot;NOTIFICATION_EMAIL_ADDRESS&quot;, &quot;gpnordic-CRM-ediEX-&quot; + System.getProperty(&quot;COUNTRY_CODE&quot;) + &quot;-group@greenpeace.org&quot;);&#10;System.setProperty(&quot;NOTIFICATION_EMAIL_CONTENT&quot;, &quot;Sent Direct Debit Authorisation Request File: &quot;);&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;"/>
+    <elementParameter field="MEMO_IMPORT" name="IMPORT" value="import java.io.File;"/>
+    <elementParameter field="TEXT" name="LABEL" value="Set Parameters"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tJava_1"/>
+  </node>
+  <node componentName="tRunJob" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="608" posY="192">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_JOB" value="false"/>
+    <elementParameter field="TEXT" name="CONTEXT_JOB" show="false" value=""/>
+    <elementParameter field="PROCESS_TYPE" name="PROCESS" value="DIRECT_DEBIT_REQUEST"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_CONTEXT" value="CLOUD_THOR_SANDBOX"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_PROCESS" value="GPN_ETL:_eeQzgPM7Eeq7urR5aXmyzQ"/>
+    <elementParameter field="TECHNICAL" name="PROCESS:PROCESS_TYPE_VERSION" value="Latest"/>
+    <elementParameter field="TEXT" name="CONTEXT_NAME" show="false" value="Default"/>
+    <elementParameter field="CHECK" name="USE_INDEPENDENT_PROCESS" value="false"/>
+    <elementParameter field="CHECK" name="DIE_ON_CHILD_ERROR" value="true"/>
+    <elementParameter field="CHECK" name="TRANSMIT_WHOLE_CONTEXT" value="true"/>
+    <elementParameter field="TABLE" name="CONTEXTPARAMS"/>
+    <elementParameter field="CHECK" name="PROPAGATE_CHILD_RESULT" value="false"/>
+    <elementParameter field="CHECK" name="PRINT_PARAMETER" value="false"/>
+    <elementParameter field="CHECK" name="TRANSMIT_ORIGINAL_CONTEXT" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CHILD_JVM_SETTING" show="false" value="true"/>
+    <elementParameter field="RADIO" name="USE_CUSTOM_JVM_SETTING" show="false" value="false"/>
+    <elementParameter field="TABLE" name="JVM_ARGUMENTS" show="false"/>
+    <elementParameter field="CHECK" name="USE_DYNAMIC_CONTEXT" value="false"/>
+    <elementParameter field="TEXT" name="DYNAMIC_CONTEXT" show="false" value="&quot;&quot;"/>
+    <elementParameter field="CHECK" name="USE_EXTRA_CLASSPATH" show="false" value="false"/>
+    <elementParameter field="TEXT" name="EXTRA_CLASSPATH" show="false" value="&quot;&quot;"/>
+    <elementParameter field="TEXT" name="LABEL" value="__PROCESS__"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tRunJob_1"/>
+  </node>
+  <node componentName="tFixedFlowInput" componentVersion="0.102" offsetLabelX="0" offsetLabelY="0" posX="128" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="TEXT" name="NB_ROWS" value="1"/>
+    <elementParameter field="RADIO" name="USE_SINGLEMODE" value="true"/>
+    <elementParameter field="TABLE" name="VALUES">
+      <elementValue elementRef="SCHEMA_COLUMN" value="newColumn"/>
+      <elementValue elementRef="VALUE" value="&quot;just some string&quot;"/>
+    </elementParameter>
+    <elementParameter field="RADIO" name="USE_INTABLE" value="false"/>
+    <elementParameter field="TABLE" name="INTABLE" show="false"/>
+    <elementParameter field="RADIO" name="USE_INLINECONTENT" value="false"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" show="false" value="&quot;;&quot;"/>
+    <elementParameter field="MEMO" name="INLINECONTENT" show="false" value=""/>
+    <elementParameter field="TEXT" name="LABEL" value="GenerateStringToCreateTempFolders"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFixedFlowInput_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="384" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_1"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.ddInputDirectory + &quot;tempFileToCreate_ddInputDirectory.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="GenereateFolderFor_context.ddInputDirectory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_1">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <node componentName="tFileOutputDelimited" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="640" posY="64">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFileOutputDelimited_2"/>
+    <elementParameter field="CHECK" name="USESTREAM" value="false"/>
+    <elementParameter field="TEXT" name="STREAMNAME" show="false" value="outputStream"/>
+    <elementParameter field="FILE" name="FILENAME" value="context.ddOutputDirectory + &quot;tempFileToCreate_ddOutputDirectory.csv&quot;"/>
+    <elementParameter field="TEXT" name="ROWSEPARATOR" value="&quot;\n&quot;"/>
+    <elementParameter field="CHECK" name="OS_LINE_SEPARATOR_AS_ROW_SEPARATOR" show="false" value="true"/>
+    <elementParameter field="OPENED_LIST" name="CSVROWSEPARATOR" show="false" value="&quot;\n&quot;"/>
+    <elementParameter field="TEXT" name="FIELDSEPARATOR" value="&quot;;&quot;"/>
+    <elementParameter field="CHECK" name="APPEND" value="false"/>
+    <elementParameter field="CHECK" name="INCLUDEHEADER" value="false"/>
+    <elementParameter field="CHECK" name="COMPRESS" value="false"/>
+    <elementParameter field="CHECK" name="ADVANCED_SEPARATOR" value="false"/>
+    <elementParameter field="TEXT" name="THOUSANDS_SEPARATOR" show="false" value="&quot;,&quot;"/>
+    <elementParameter field="TEXT" name="DECIMAL_SEPARATOR" show="false" value="&quot;.&quot;"/>
+    <elementParameter field="CHECK" name="CSV_OPTION" value="false"/>
+    <elementParameter field="TEXT" name="ESCAPE_CHAR" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="TEXT" name="TEXT_ENCLOSURE" show="false" value="&quot;&quot;&quot;"/>
+    <elementParameter field="CHECK" name="CREATE" value="true"/>
+    <elementParameter field="CHECK" name="SPLIT" value="false"/>
+    <elementParameter field="TEXT" name="SPLIT_EVERY" show="false" value="1000"/>
+    <elementParameter field="CHECK" name="FLUSHONROW" value="false"/>
+    <elementParameter field="TEXT" name="FLUSHONROW_NUM" show="false" value="1"/>
+    <elementParameter field="CHECK" name="ROW_MODE" value="false"/>
+    <elementParameter field="ENCODING_TYPE" name="ENCODING" value="&quot;ISO-8859-15&quot;"/>
+    <elementParameter field="TECHNICAL" name="ENCODING:ENCODING_TYPE" value="ISO-8859-15"/>
+    <elementParameter field="CHECK" name="DELETE_EMPTYFILE" value="false"/>
+    <elementParameter field="CHECK" name="FILE_EXIST_EXCEPTION" value="false"/>
+    <elementParameter field="TEXT" name="SCHEMA_OPT_NUM" show="false" value="90"/>
+    <elementParameter field="TEXT" name="LABEL" value="GenerateFolderFor_context.ddOutputDirectory"/>
+    <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
+    <metadata connector="FLOW" name="tFileOutputDelimited_2">
+      <column comment="" key="false" length="-1" name="newColumn" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+    </metadata>
+  </node>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tJava_1" offsetLabelX="0" offsetLabelY="0" source="tJava_1" target="tRunJob_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk1"/>
+  </connection>
+  <connection connectorName="FLOW" label="row2" lineStyle="0" metaname="tFixedFlowInput_1" offsetLabelX="0" offsetLabelY="0" source="tFixedFlowInput_1" target="tFileOutputDelimited_1">
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row2"/>
+  </connection>
+  <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="tFileOutputDelimited_1" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_1" target="tFileOutputDelimited_2">
+    <elementParameter field="TABLE" name="TRACES_CONNECTION_FILTER" show="false">
+      <elementValue elementRef="TRACE_COLUMN" value="newColumn"/>
+      <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
+      <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
+    </elementParameter>
+    <elementParameter field="CHECK" name="MONITOR_CONNECTION" value="false"/>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="row1"/>
+  </connection>
+  <connection connectorName="COMPONENT_OK" label="OnComponentOk" lineStyle="3" metaname="tFileOutputDelimited_2" offsetLabelX="0" offsetLabelY="0" source="tFileOutputDelimited_2" target="tJava_1">
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="OnComponentOk2"/>
+  </connection>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tJava_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tRunJob_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+  <subjob>
+    <elementParameter field="TEXT" name="UNIQUE_NAME" show="false" value="tFixedFlowInput_1"/>
+    <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
+    <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
+  </subjob>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_80d818e2-29da-4828-9255-9ac090834c36"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YkHYItupQBwp6QaEPqozd+kv6DXcvISGeh2yRzZrzixQylZUteqYjOi1HwL9r0zyVm/8/c01207k&#13;
+hd314321wQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_680e13cc-dd90-475e-8e01-c18869ed88a7"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>ikTqexRRkDOso28hri23KYzJ+Hmk+CkFMUPlKOimhgjY2sKgDigDTdQ7a1BWBTrzd7J3rBim0g9r&#13;
+8kPeTl6hHA==</DigestValue></Reference></SignedInfo><SignatureValue>OLrLg+k9GlcbpB141hpbnVQsVGdlSGzRm76nPXPwonz+vP8NqmIlmgDH1h4K2zJ2Vhtt2McTJsrm&#13;
+9+KhixgSbgje9J+weHjE86BjQlInzJzUN+7UVOhhLrk5eJAvdlRPjXygJOFx/nUelvfZvu6UdnAq&#13;
+X6W8qdtP651XwPDhT63AdpTCA+sn4I91YlZZpv0TObrITvRJPjq+7j541kFnYlq5xu5kuY2T+i8l&#13;
+PhIMzDmfVYKpaEua2JkASogPtky2Wwn3nSqXlz0Gf+MnO5IrdRKTTz5c3TMgqshpf2IjBxMMpm1C&#13;
+CvELlJx3hpwa5sUDYH2igH+c+aJt3Gq8CABj7Q==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w&#13;
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD&#13;
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5&#13;
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U&#13;
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh&#13;
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB&#13;
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2&#13;
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl&#13;
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx&#13;
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B&#13;
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ&#13;
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF&#13;
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG&#13;
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM&#13;
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA&#13;
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw&#13;
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/&#13;
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG&#13;
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/&#13;
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW&#13;
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+&#13;
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg&#13;
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_680e13cc-dd90-475e-8e01-c18869ed88a7" Target="#_80d818e2-29da-4828-9255-9ac090834c36"><Timestamp>2022-05-17 09:38:25</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
